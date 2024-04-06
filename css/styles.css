@@ -109,7 +109,6 @@ h1,h2,h3,h4 {
 
 .menu-toggle {
     display: none;
-    /* Oculta el botón de menú toggle*/
 }
 
 /* T A B L E T */
@@ -159,22 +158,17 @@ h1,h2,h3,h4 {
 
     .menu-toggle span {
         background-color: var(--naranja);
-        /* Color de las líneas del menú */
         height: .21rem;
-        /* Altura de las líneas */
         width: 60%;
-        /* Ancho de las líneas */
         display: block;
     }
 
     .menu-toggle span:nth-child(2) {
         margin: .6rem 0;
-        /* Espacio entre las líneas */
     }
 
     .navegacion ul {
         display: none;
-        /* Oculta el menú (tablet y desk)*/
     }
 
     .menu.open .navegacion ul {
@@ -246,9 +240,7 @@ footer,
     border-bottom: 1rem solid;
     border-color: var(--gris);
     max-width: var(--ancho_completo);
-    /* La imagen ocupará como máximo el ancho del contenedor */
     height: auto;
-    /* La altura se ajustará automáticamente para mantener la proporción de la imagen */
 }
 
 /* CITA */
@@ -265,7 +257,6 @@ footer,
     font-weight: 600;
     padding: 1rem;
     border-left: .5rem solid var(--naranja);
-    /* Añade una línea vertical a la izquierda para destacar la cita */
     height: auto;
 }
 
