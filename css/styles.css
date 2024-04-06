@@ -1,0 +1,314 @@
+:root {
+    --blanco: #E6E6E6;
+    --naranja: #FF6600;
+    --oscuro: #003366;
+    --claro: #336699;
+    --gris: #C0C0C0;
+    --tamaño_H1: 3.8rem;
+    --tamaño_H2: 2.8rem;
+    --tamaño_H3: 1.8rem;
+    --tamaño_H4: 1.6rem;
+    --tamaño_p: 1.6rem;
+    --ancho_completo: 100%;
+}
+
+/*Globales*/
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+*,*:before,*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: var(--tamaño_p);
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--blanco);
+    margin: 0 auto;
+}
+
+/* TIPOGRAFÍA */
+h1 {
+    font-size: var(--tamaño_H1);
+    color: var(--blanco);
+}
+
+h2 {
+    font-size: var(--tamaño_H2);
+}
+
+h3 {
+    font-size: var(--tamaño_H3);
+}
+
+h4 {
+    font-size: var(--tamaño_H4);
+}
+
+h1,h2,h3,h4 {
+    text-align: center;
+}
+
+/* ESTILOS GENERALES */
+.contenido {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "s1 s1 s1 s1 s1 s1 s1 s1"
+        ". s2 s2 s2 s2 s2 s2 ."
+        ". s3 s3 s3 s4 s4 s4 ."
+}
+
+/* MENÚ DE NAVEGACIÓN */
+.menu {
+    width: var(--ancho_completo);
+    height: auto;
+    background-color: var(--blanco);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 25rem;
+    margin: 1rem;
+    z-index: 100;
+}
+
+.navegacion {
+    margin-left: auto;
+}
+
+.navegacion ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.navegacion ul li {
+    margin-left: 2rem;
+}
+
+.navegacion ul li a {
+    color: var(--claro);
+    text-decoration: none;
+    font-size: var(--tamaño_H4);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navegacion ul li a:hover {
+    color: var(--naranja);
+    text-decoration: .3rem underline var(--gris);
+}
+
+.menu-toggle {
+    display: none;
+    /* Oculta el botón de menú toggle*/
+}
+
+/* T A B L E T */
+@media screen and (max-width: 960px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .navegacion {
+        margin-left: 0;
+    }
+
+    .navegacion ul {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .navegacion ul li {
+        margin: 0 2rem 1rem 2rem;
+    }
+}
+
+/* M O V I L */
+@media screen and (max-width: 760px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        padding: 2rem;
+    }
+
+    .logo {
+        max-width: 18rem;
+    }
+
+    /* Estilos para el botón de menú */
+    .menu-toggle {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        width: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    .menu-toggle span {
+        background-color: var(--naranja);
+        /* Color de las líneas del menú */
+        height: .21rem;
+        /* Altura de las líneas */
+        width: 60%;
+        /* Ancho de las líneas */
+        display: block;
+    }
+
+    .menu-toggle span:nth-child(2) {
+        margin: .6rem 0;
+        /* Espacio entre las líneas */
+    }
+
+    .navegacion ul {
+        display: none;
+        /* Oculta el menú (tablet y desk)*/
+    }
+
+    .menu.open .navegacion ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: var(--ancho_completo);
+        right: 0;
+        background-color: var(--claro);
+        width: 40%;
+    }
+
+    .menu.open .navegacion ul li {
+        margin: 0;
+    }
+
+    .menu.open .navegacion ul li a {
+        color: var(--blanco);
+        padding: 1rem;
+        display: block;
+        border-bottom: .1rem solid var(--gris);
+    }
+
+    .menu.open .navegacion ul li a:hover {
+        color: var(--naranja);
+        box-shadow: .2rem #004e98;
+    }
+}
+
+/* FOOTER */
+.footer {
+
+}
+
+/* ESTILOS COMUNES SECCIONES */
+
+/* RESPONSIVO/CENTRADO */
+.portfolio_s1,
+.servicios_s1,
+.contacto_s1,
+.presupuesto_s1,
+.cita,
+footer,
+.logo,
+.banner {
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio_s1,
+.servicios_s1,
+.contacto_s1,
+.presupuesto_s1 {
+    background-color: var(--claro);
+    color: var(--gris);
+}
+
+/* CONTENIDO ESPECÍFICO (páginas) */
+
+/* *** *** L A N D I N G *** *** */
+
+/* TOP BANNER (landing) */
+.banner {
+    grid-area: s1;
+}
+
+.banner_img {
+    border-top: 1rem solid;
+    border-bottom: 1rem solid;
+    border-color: var(--gris);
+    max-width: var(--ancho_completo);
+    /* La imagen ocupará como máximo el ancho del contenedor */
+    height: auto;
+    /* La altura se ajustará automáticamente para mantener la proporción de la imagen */
+}
+
+/* CITA */
+.cita {
+    grid-area: s2;
+    background-color: var(--blanco);
+    color: var(--claro);
+    max-width: var(--ancho_completo);
+}
+
+.cita blockquote {
+    font-size: var(--tamaño_H2);
+    font-style: italic;
+    font-weight: 600;
+    padding: 1rem;
+    border-left: .5rem solid var(--naranja);
+    /* Añade una línea vertical a la izquierda para destacar la cita */
+    height: auto;
+}
+
+.cita p {
+    text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+    .cita blockquote {
+        font-size: var(--tamaño_H3);
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .cita {
+        display: none;
+    }
+}
+
+/* QUIENES SOMOS (landing)*/
+
+.nosotros {
+    grid-area: s3;
+}
+
+/*  *** *** P O R T F O L I O *** ***  */
+.portfolio_s1 {
+    grid-area: s1;
+}
+
+/*  *** *** S E R V I C I O S *** *** */
+.servicios_s1 {
+    grid-area: s1;
+}
+
+/*  *** *** C O N T A C T O *** ***  */
+.contacto_s1 {
+    grid-area: s1;
+}
+
+/*  *** *** P R E S U P U E S T O *** ***  */
+.presupuesto_s1 {
+    grid-area: s1;
+}
+
+/* TESTING */
