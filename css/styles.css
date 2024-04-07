@@ -200,8 +200,39 @@ h1,h2,h3,h4 {
 
 /* FOOTER */
 .footer {
-    /* ESTO LO ESTÁ HACIENDO AIRAM */
-}
+    background-color: var(--claro);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+    /*column-gap: 1.5rem; /*  SEparación entre columnas */
+    /*row-gap: 3rem; /* SEparación entre filas */
+    text-align: center;
+    color: var(--blanco);
+  }
+  
+  .footer a { 
+    text-decoration: none;
+    color: var(--blanco); /* Añado color blanco al texto */ 
+  }
+  
+  .footer section {
+    align-self: start; /* Alinea el contenido en la parte superior del grid */
+  }
+  .footer img {
+    height: 60px;
+    width: auto;
+  }
+  
+  .footer .waves {
+    background-color: var(--blanco);
+    grid-column-start: 1; /* Comienza en la primera columna */
+    grid-column-end: -1; /* Termina en el final */
+  }
+  
+  .footer .waves img { /* Asignamos todo el ancho para la waves */
+      width: 100%;
+      height: auto;
+      margin-bottom: -1rem;
+    }
 
 /* ESTILOS COMUNES SECCIONES */
 
@@ -301,40 +332,5 @@ footer,
 .presupuesto_s1 {
     grid-area: s1;
 }
-
-.footer {
-    background-color: var(--claro);
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
-    /*column-gap: 1.5rem; /*  SEparación entre columnas */
-    /*row-gap: 3rem; /* SEparación entre filas */
-    text-align: center;
-    color: var(--blanco);
-  }
-  
-  .footer a { 
-    text-decoration: none;
-    color: var(--blanco); /* Añado color blanco al texto */ 
-  }
-  
-  .footer section {
-    align-self: start; /* Alinea el contenido en la parte superior del grid */
-  }
-  .footer img {
-    height: 60px;
-    width: auto;
-  }
-  
-  .footer .waves {
-    background-color: var(--blanco);
-    grid-column-start: 1; /* Comienza en la primera columna */
-    grid-column-end: -1; /* Termina en el final */
-  }
-  
-  .footer .waves img { /* Asignamos todo el ancho para la waves */
-      width: 100%;
-      height: auto;
-      margin-bottom: -1rem;
-    }
 
 /* TESTING */
