@@ -317,7 +317,7 @@ footer,
     color: var(--blanco); 
   }
   
-  .footer section { 
+  .footer section {
     align-self: start; /* Alinea el contenido en la parte superior del grid */
   }
   .footer img {
