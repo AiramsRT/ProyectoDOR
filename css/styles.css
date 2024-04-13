@@ -13,31 +13,35 @@
 }
 
 /*Globales*/
-html, body {
+html,
+body {
     font-size: 62.5%;
     box-sizing: border-box;
-    scroll-snap-type: y mandatory;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--blanco);
     width: 100%;
     height: 100%;
+    scroll-snap-type: y mandatory;
 }
 
-*,*:before,*:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
+    list-style: none;
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-body {
+/* TIPOGRAFÍA */
+p {
     font-size: var(--tamaño_p);
-    font-family: "Montserrat", sans-serif;
-    background-color: var(--blanco);
-    margin: 0 auto;
 }
 
-/* TIPOGRAFÍA */
 h1 {
     font-size: var(--tamaño_H1);
+    font-weight: bold;
     color: var(--blanco);
 }
 
@@ -53,18 +57,17 @@ h4 {
     font-size: var(--tamaño_H4);
 }
 
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
     text-align: center;
 }
 
 /* ESTILOS GENERALES */
-header {
-    position: fixed;
-    z-index: 5;
-    top: 0;
-}
-
 .contenido {
+    width: 100%;
+    height: 100%;
     position: relative;
     top: 10%;
     display: grid;
@@ -75,35 +78,31 @@ header {
         ". s2 s2 s2 s2 s2 s2 ."
         ". s3 s3 s3 s4 s4 s4 ."
 }
+
 /* MENÚ DE NAVEGACIÓN */
 .menu {
-    width: var(--ancho_completo);
-    height: auto;
-    background-color: var(--blanco);
-    padding: 1rem;
     display: flex;
+    position: fixed;
+    justify-content: space-around;
     align-items: center;
+    z-index: 5;
+    width: 100%;
+    height: 10%;
+    background-color: var(--blanco);
 }
 
 .logo {
     max-width: 25rem;
-    margin: 1rem;
-    z-index: 100;
+    z-index: 5;
 }
 
-.navegacion {
-    margin-left: auto;
-}
 
 .navegacion ul {
     display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
 }
 
 .navegacion ul li {
-    margin-left: 2rem;
+    margin-left: 3rem;
 }
 
 .navegacion ul li a {
@@ -127,19 +126,12 @@ header {
 @media screen and (max-width: 960px) {
     .menu {
         flex-direction: column;
+        justify-content: center;
     }
 
-    .navegacion {
-        margin-left: 0;
-    }
-
-    .navegacion ul {
-        flex-direction: row;
-        margin: 0;
-    }
-
-    .navegacion ul li {
-        margin: 0 2rem 1rem 2rem;
+    .logo {
+        max-width: 25rem;
+        padding: 1rem;
     }
 }
 
@@ -214,52 +206,47 @@ header {
 .footer {
     background-color: var(--claro);
     display: grid;
+    z-index: 5;
     grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
     /*column-gap: 1.5rem; /*  SEparación entre columnas */
     /*row-gap: 3rem; /* SEparación entre filas */
     text-align: center;
     color: var(--blanco);
-  }
-  
-  .footer a { 
+}
+
+.footer a {
     text-decoration: none;
-    color: var(--blanco); /* Añado color blanco al texto */ 
-  }
-  
-  .footer section {
-    align-self: start; /* Alinea el contenido en la parte superior del grid */
-  }
-  .footer img {
+    color: var(--blanco);
+    /* Añado color blanco al texto */
+}
+
+.footer section {
+    align-self: start;
+    /* Alinea el contenido en la parte superior del grid */
+}
+
+.footer img {
     height: 60px;
     width: auto;
-  }
-  
-  .footer .waves {
+}
+
+.footer .waves {
     background-color: var(--blanco);
-    grid-column-start: 1; /* Comienza en la primera columna */
-    grid-column-end: -1; /* Termina en el final */
-  }
-  
-  .footer .waves img { /* Asignamos todo el ancho para la waves */
-      width: 100%;
-      height: auto;
-      margin-bottom: -1rem;
-    }
+    z-index: 5;
+    grid-column-start: 1;
+    /* Comienza en la primera columna */
+    grid-column-end: -1;
+    /* Termina en el final */
+}
+
+.footer .waves img {
+    /* Asignamos todo el ancho para la waves */
+    width: 100%;
+    height: auto;
+    margin-bottom: -1rem;
+}
 
 /* ESTILOS COMUNES SECCIONES */
-
-/* RESPONSIVO/CENTRADO */
-.portfolio_s1,
-.servicios_s1,
-.contacto_s1,
-.presupuesto_s1,
-.cita,
-footer,
-.logo,
-.banner {
-    justify-content: center;
-    align-items: center;
-}
 
 .portfolio_s1,
 .servicios_s1,
@@ -276,6 +263,7 @@ footer,
 /* TOP BANNER (landing) */
 .banner {
     grid-area: s1;
+
 }
 
 .banner_img {
@@ -290,17 +278,16 @@ footer,
     grid-area: s2;
     background-color: var(--blanco);
     color: var(--claro);
-    max-width: var(--ancho_completo);
-    padding: 5rem;
 }
 
 .cita blockquote {
+    display: flex;
+    justify-content: center;
+    width: var(--ancho_completo);
     font-size: var(--tamaño_H2);
     font-style: italic;
-    font-weight: 600;
-    padding: 1rem;
     border-left: .5rem solid var(--naranja);
-    height: auto;
+
 }
 
 .cita p {
