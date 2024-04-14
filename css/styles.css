@@ -65,22 +65,24 @@ h4 {
 }
 
 /* ESTILOS GENERALES */
-.contenido {
+#contenido {
     width: 100%;
     height: 100%;
     position: relative;
     top: 10%;
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
         "s1 s1 s1 s1 s1 s1 s1 s1"
         ". s2 s2 s2 s2 s2 s2 ."
-        ". s3 s3 s3 s4 s4 s4 ."
+        ". s3 s3 s3 s3 s3 s3 ."
+        ". s4 s4 s4 s5 s5 s5 ."
 }
 
 /* MENÚ DE NAVEGACIÓN */
-.menu {
+#menu {
     display: flex;
     position: fixed;
     justify-content: space-around;
@@ -91,21 +93,21 @@ h4 {
     background-color: var(--blanco);
 }
 
-.logo {
+#logo {
     max-width: 25rem;
     z-index: 5;
 }
 
 
-.navegacion ul {
+#navegacion ul {
     display: flex;
 }
 
-.navegacion ul li {
+#navegacion ul li {
     margin-left: 3rem;
 }
 
-.navegacion ul li a {
+#navegacion ul li a {
     color: var(--claro);
     text-decoration: none;
     font-size: var(--tamaño_H4);
@@ -113,23 +115,23 @@ h4 {
     text-transform: uppercase;
 }
 
-.navegacion ul li a:hover {
+#navegacion ul li a:hover {
     color: var(--naranja);
     text-decoration: .3rem underline var(--gris);
 }
 
-.menu-toggle {
+#menu-toggle {
     display: none;
 }
 
 /* T A B L E T */
 @media screen and (max-width: 960px) {
-    .menu {
+    #menu {
         flex-direction: column;
         justify-content: center;
     }
 
-    .logo {
+    #logo {
         max-width: 25rem;
         padding: 1rem;
     }
@@ -137,18 +139,18 @@ h4 {
 
 /* M O V I L */
 @media screen and (max-width: 760px) {
-    .menu {
+    #menu {
         display: flex;
         flex-direction: row;
         padding: 2rem;
     }
 
-    .logo {
+    #logo {
         max-width: 18rem;
     }
 
     /* Estilos para el botón de menú */
-    .menu-toggle {
+    #menu-toggle {
         background-color: transparent;
         border: none;
         cursor: pointer;
@@ -160,22 +162,22 @@ h4 {
         margin-left: auto;
     }
 
-    .menu-toggle span {
+    #menu-toggle span {
         background-color: var(--naranja);
         height: .21rem;
         width: 60%;
         display: block;
     }
 
-    .menu-toggle span:nth-child(2) {
+    #menu-toggle span:nth-child(2) {
         margin: .6rem 0;
     }
 
-    .navegacion ul {
+    #navegacion ul {
         display: none;
     }
 
-    .menu.open .navegacion ul {
+    #menu.open .navegacion ul {
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -185,18 +187,18 @@ h4 {
         width: 40%;
     }
 
-    .menu.open .navegacion ul li {
+    #menu.open .navegacion ul li {
         margin: 0;
     }
 
-    .menu.open .navegacion ul li a {
+    #menu.open .navegacion ul li a {
         color: var(--blanco);
         padding: 1rem;
         display: block;
         border-bottom: .1rem solid var(--gris);
     }
 
-    .menu.open .navegacion ul li a:hover {
+    #menu.open .navegacion ul li a:hover {
         color: var(--naranja);
         box-shadow: .2rem #004e98;
     }
@@ -248,10 +250,10 @@ h4 {
 
 /* ESTILOS COMUNES SECCIONES */
 
-.portfolio_s1,
-.servicios_s1,
-.contacto_s1,
-.presupuesto_s1 {
+#portfolio_s1,
+#servicios_s1,
+#contacto_s1,
+#presupuesto_s1 {
     background-color: var(--claro);
     color: var(--gris);
 }
@@ -261,74 +263,53 @@ h4 {
 /* *** *** L A N D I N G *** *** */
 
 /* TOP BANNER (landing) */
-.banner {
+#banner {
     grid-area: s1;
 
 }
 
-.banner_img {
+#banner_img {
     border-top: 1rem solid;
     border-bottom: 1rem solid;
     border-color: var(--gris);
     width: var(--ancho_completo);
 }
 
-/* CITA */
-.cita {
-    grid-area: s2;
-    background-color: var(--blanco);
-    color: var(--claro);
-}
-
-.cita blockquote {
+/* SERVICIOS */
+#servicios {
+    grid-area: s3;
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center;
-    width: var(--ancho_completo);
-    font-size: var(--tamaño_H2);
-    font-style: italic;
-    border-left: .5rem solid var(--naranja);
-
-}
-
-.cita p {
-    text-align: center;
-}
-
-@media screen and (max-width: 960px) {
-    .cita blockquote {
-        font-size: var(--tamaño_H3);
-    }
-}
-
-@media screen and (max-width: 760px) {
-    .cita {
-        display: none;
-    }
+    justify-content: space-evenly;
+    z-index: 6;
 }
 
 /* QUIENES SOMOS (landing)*/
 
-.nosotros {
-    grid-area: s3;
+#nosotros {
+    grid-area: s4;
 }
 
+/* FIN DE LANDING */
+
 /*  *** *** P O R T F O L I O *** ***  */
-.portfolio_s1 {
+#portfolio_s1 {
     grid-area: s1;
 }
 
 /*  *** *** S E R V I C I O S *** *** */
-.servicios_s1 {
+#servicios_s1 {
     grid-area: s1;
 }
 
 /*  *** *** C O N T A C T O *** ***  */
-.contacto_s1 {
+#contacto_s1 {
     grid-area: s1;
 }
 
 /*  *** *** P R E S U P U E S T O *** ***  */
-.presupuesto_s1 {
+#presupuesto_s1 {
     grid-area: s1;
 }
 
