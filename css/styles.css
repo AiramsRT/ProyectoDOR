@@ -208,19 +208,18 @@ h4 {
 #footer {
     background-color: var(--claro);
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(30%, 45%);
     color: var(--blanco);
     width: 100%;
-  }
+}
 
   #elementos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
     text-align: center;
     grid-column-start: 1; /* Comienza en la primera columna */
-    grid-column-end: -1; /* Termina en el final */
-    justify-items: center;
-  
+    grid-column-end: -1;
   }
   
   #elementos > section {
@@ -232,21 +231,20 @@ h4 {
     color: var(--blanco); /* Añado color blanco al texto */
   }
   
-  #footer img {
+  #footer_ico {
     height: 60px;
     width: auto;
   }
   
   #waves {
+    display: flex;
+    width: 100%;
     background-color: var(--blanco);
     grid-column-start: 1; /* Comienza en la primera columna */
-    grid-column-end: -1; /* Termina en el final */
+    grid-column-end: -1;
   }
   
-  #waves img {
-    width: 100%;
-    height: auto;
-  }
+
 
 /* ESTILOS COMUNES SECCIONES */
 
