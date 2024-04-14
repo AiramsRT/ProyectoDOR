@@ -205,48 +205,48 @@ h4 {
 }
 
 /* FOOTER */
-.footer {
+#footer {
     background-color: var(--claro);
     display: grid;
-    z-index: 5;
-    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
-    /*column-gap: 1.5rem; /*  SEparación entre columnas */
-    /*row-gap: 3rem; /* SEparación entre filas */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    color: var(--blanco);
+    width: 100%;
+  }
+
+  #elementos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     text-align: center;
-    color: var(--blanco);
-}
-
-.footer a {
+    grid-column-start: 1; /* Comienza en la primera columna */
+    grid-column-end: -1; /* Termina en el final */
+    justify-items: center;
+  
+  }
+  
+  #elementos > section {
+    margin-bottom: 5%; /* Margen inferior para cuando la pantalla sea más pequeña se separe el contenido */
+  }
+  
+  #footer a {
     text-decoration: none;
-    color: var(--blanco);
-    /* Añado color blanco al texto */
-}
-
-.footer section {
-    align-self: start;
-    /* Alinea el contenido en la parte superior del grid */
-}
-
-.footer img {
+    color: var(--blanco); /* Añado color blanco al texto */
+  }
+  
+  #footer img {
     height: 60px;
     width: auto;
-}
-
-.footer .waves {
+  }
+  
+  #waves {
     background-color: var(--blanco);
-    z-index: 5;
-    grid-column-start: 1;
-    /* Comienza en la primera columna */
-    grid-column-end: -1;
-    /* Termina en el final */
-}
-
-.footer .waves img {
-    /* Asignamos todo el ancho para la waves */
+    grid-column-start: 1; /* Comienza en la primera columna */
+    grid-column-end: -1; /* Termina en el final */
+  }
+  
+  #waves img {
     width: 100%;
     height: auto;
-    margin-bottom: -1rem;
-}
+  }
 
 /* ESTILOS COMUNES SECCIONES */
 
