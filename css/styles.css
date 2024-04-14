@@ -208,7 +208,7 @@ h4 {
 #footer {
     background-color: var(--claro);
     display: grid;
-    grid-auto-rows: minmax(30%, 45%);
+    grid-auto-rows: auto;
     color: var(--blanco);
     width: 100%;
 }
@@ -216,14 +216,22 @@ h4 {
   #elementos {
     display: flex;
     width: 100%;
+    height: auto;
     justify-content: space-around;
     text-align: center;
     grid-column-start: 1; /* Comienza en la primera columna */
     grid-column-end: -1;
   }
   
-  #elementos > section {
-    margin-bottom: 5%; /* Margen inferior para cuando la pantalla sea más pequeña se separe el contenido */
+  @media screen and (max-width: 480px) { 
+    #elementos { 
+        flex-direction: column;
+    }
+  }
+
+  #elementos section {
+    background-color: var(--claro);
+    margin-top: 2rem;
   }
   
   #footer a {
