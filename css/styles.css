@@ -214,10 +214,13 @@ h1, h2, h3, h4 {
 
 #elementos section {
     background-color: var(--claro);
-    margin-top: 2rem;
-}
+  }
 
-#footer a {
+  #elementos section p{
+    margin: 10px;
+  }
+  
+  #footer a {
     text-decoration: none;
     color: var(--blanco);
 }
