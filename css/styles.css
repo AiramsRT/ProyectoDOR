@@ -212,7 +212,7 @@ h4 {
     color: var(--blanco);
     width: 100%;
   }
-  
+
   #elementos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
