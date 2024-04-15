@@ -278,3 +278,141 @@ h4 {
     flex-direction: column;
 }
 
+/* Formulario de contacto */
+#contact_form {
+    width: 60%; 
+    height: auto;
+    margin: 80px auto;
+	border-radius: 10px;  
+	padding-top: 30px;
+	padding-bottom: 20px;  
+    background-color: #fbfbfb; 
+    padding-left: 30px;
+    position: relative;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+
+
+input {
+	background-color: #fbfbfb; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #FF6600; 
+	margin-top: 20px;  
+	padding-left: 10px;
+    margin-bottom: 20px; 
+    align-items: center;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+textarea {
+      
+      background-color: #fbfbfb; 
+      width: 405px; 
+      height: 150px; 
+      border-radius: 5px;  
+      border-style: solid; 
+      border-width: 1px; 
+      border-color: #FF6600; 
+      margin-top: 20px;  
+      padding-left: 10px;
+      margin-bottom: 20px; 
+      padding-top: 15px; 
+      box-shadow: 3px 3px 5px 6px #ccc;
+      align-content: center;
+  }
+  
+  
+  label {
+      
+      position: absolute;  	
+      margin-bottom: 10%;
+      
+  }
+  
+  
+  button {
+      height: 45px; 
+      padding-left: 5px;
+      padding-right: 5px; 	
+      margin-bottom: 20px; 
+      margin-top: 10px; 	
+      text-transform: uppercase;
+      background-color: #FF6600; 
+      border-color: #FF6600; 
+      border-style: solid; 
+      border-radius: 10px;	
+      width: 420px;   
+      cursor: pointer;
+      box-shadow: 3px 3px 5px 6px #ccc;
+  }
+  
+  
+  button p {
+      color: #fff; 
+  }
+  
+  button:hover{
+    background:#003366;
+  }
+  
+  span {
+      color: #FF6600; 
+  }
+  
+  
+  .aviso {
+      font-size: 13px;  
+      color: #003366;  
+  }
+  
+  
+  h1 {
+      font-size: 39px;  
+      text-align: letf; 
+      padding-bottom: 20px; 
+      color: #FF6600;
+  }
+  
+  
+  h3 {
+      font-size: 16px; 
+      padding-bottom: 30px;
+      color: #003366;   
+      text-decoration: solid;
+  }
+  
+  
+  p {
+      font-size: 14px; 
+      color: #003366; 
+      text-decoration: solid;
+  }
+  
+  
+  ::-webkit-input-placeholder {
+      color: #a8a8a8;
+  }
+  
+  
+  ::-webkit-textarea-placeholder {
+      color: #a8a8a8;
+  }
+  
+  
+  .formulario input:focus {
+      outline:0;
+      border: 1px solid #FF6600;
+  }
+  
+  
+  .formulario textarea:focus {
+      outline:0;
+      border: 1px solid #FF6600;
+  }
+  
+}

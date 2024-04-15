@@ -32,6 +32,52 @@
         <section id="contacto_s1">
             <h1>C O N T A C T O</h1>
         </section>
+        <section id="contact_form">
+            <h1>Formulario de contacto</h1>
+             <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
+
+             <p>
+                <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                </label>
+                 <input type="text" name="Introduzca_su_nombre"
+                 id="nombre" placeholder="Escriba su nombre" tabindex="1" required autofocus>
+             </p>
+
+             <p>
+             <label for="email" class="colocar_email">Email
+                <span class="obligatorio">*</span>
+            </label>
+             <input type="text" name="Introduzca_su_email"
+             id="nombre" placeholder="Escriba su email" tabindex="2" required>
+         </p>
+         <p>
+            <label for="email" class="colocar_teléfono">Teléfono
+               <span class="obligatorio">*</span>
+           </label>
+            <input type="text" name="Introduzca_su_teléfono"
+            id="nombre" placeholder="Escriba su teléfono" tabindex="3" required>
+        </p>
+        <p>
+            <label for="asunto" class="colocar_asunto">Asunto
+                <span class="obligatorio">*</span>
+            </label>
+                <input type="text" name="introducir_asunto" id="assunto" placeholder="Escriba un asunto" tabindex="4" required>
+        </p>		
+    
+        <p>
+            <label for="mensaje" class="colocar_mensaje">Mensaje
+                <span class="obligatorio">*</span>
+            </label>                     
+                 <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" placeholder="Deje aquí su comentario..." tabindex="5" required></textarea> 
+           </p>	  								
+    
+        <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+        <p class="aviso">
+            <span class="obligatorio"> * </span>Campos obligatorios.
+        </p>
+        </section>
     </main>
 
     <footer id="footer">
