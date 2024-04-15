@@ -292,7 +292,7 @@ h4 {
     box-shadow: 3px 3px 5px 6px #ccc;
     text-align: center;
     text-rendering: optimizeLegibility;
-
+}
 
 input {
 	background-color: #fbfbfb; 
@@ -323,7 +323,6 @@ textarea {
       margin-bottom: 20px; 
       padding-top: 15px; 
       box-shadow: 3px 3px 5px 6px #ccc;
-      align-content: center;
   }
   
   
@@ -371,18 +370,14 @@ textarea {
   }
   
   
-  h1 {
-      font-size: 39px;  
-      text-align: letf; 
-      padding-bottom: 20px; 
-      color: #FF6600;
+  h1 { 
+      color: var(--naranja);
   }
-  
   
   h3 {
       font-size: 16px; 
       padding-bottom: 30px;
-      color: #003366;   
+      color: var(--oscuro);   
       text-decoration: solid;
   }
   
@@ -415,4 +410,3 @@ textarea {
       border: 1px solid #FF6600;
   }
   
-}
