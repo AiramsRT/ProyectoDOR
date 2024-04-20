@@ -1,5 +1,5 @@
 :root {
-    --blanco: #E6E6E6;
+    --blanco: #ffffff;
     --naranja: #FF6600;
     --oscuro: #003366;
     --claro: #336699;
@@ -388,7 +388,7 @@ textarea {
       text-decoration: solid;
   }
   
-  
+
   ::-webkit-input-placeholder {
       color: #a8a8a8;
   }
