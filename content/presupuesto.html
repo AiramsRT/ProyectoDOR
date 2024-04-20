@@ -29,10 +29,9 @@
         </nav>
     </header>
     <main id="contenido">
-        <section id="contacto_s1">
+        <section id="presupuesto_s1">
             <h1>P R E S U P U E S T O</h1>
         </section>
-        <section id="form_presupuesto">
              <form>
                 <h1>Solicitud de presupuesto</h1>
                  <label for="nombre">Nombre:</label>
@@ -44,8 +43,8 @@
                  <label for="telefono">Teléfono de contacto:</label>
                  <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Escriba su teléfono" required><br><br>
          
-                 <label for="descripcion">Descripción, detalles del presupuesto y datos adicionales:</label>
-                 <textarea id="descripcion" name="descripcion" rows="4" cols="50" required></textarea><br><br>
+                 <label for="descripcion">Descripción:</label>
+                 <textarea id="presupuesto_textarea" name="descripcion" rows="4" cols="50" placeholder="Detalles del presupuesto y datos adicionales" required></textarea><br><br>
          
                  <label for="material">Tipo de material:</label>
                  <select id="material" name="material">
@@ -63,12 +62,36 @@
                  <label for="archivo">Subir documentos:</label>
                  <input type="file" id="archivo" name="archivo"><br><br>
          
-                 <input type="submit" value="Enviar solicitud">
+                 <button type="submit">Enviar</button>
              </form>
     </main>
 
     <footer id="footer">
-
+        <img id="waves" src="../resources/wave.svg">
+        <section id="elementos">
+            <section>
+                <a href="https://maps.app.goo.gl/Q2KEGaSHgzD4yTxC6"><img id="footer_ico" src="../resources/localizacion.svg"></a>
+                <p>
+                    Av. Príncipes de España, 5, 38010 <br>Santa Cruz De Tenerife
+                    <br>Teléfono: 922 47 72 00
+                </p>
+            </section>
+            <section>
+                <img id="footer_ico" src="../resources/enlaces.svg">
+                <p>
+                    <a href="#" title="Política de Privacidad">Política de Privacidad</a><br>
+                    <a href="#" title="Política de Cookies">Política de Cookies</a>
+                </p>
+            </section>
+            <section>
+                <a href="https://youtube.es"><img id="footer_ico" src="../resources/youtube.svg"></a>
+                <a href="https://www.whatsapp.com"><img id="footer_ico" src="../resources/whatsapp.svg"></a>
+                <a href="https://www.facebook.com"><img id="footer_ico" src="../resources/facebook.svg"></a>
+                <a href="https://www.instagram.com"><img id="footer_ico" src="../resources/instagram.svg"></a>
+                <br>
+                <p>Siguenos en nuestras redes!</p>
+            </section>
+        </section>
     </footer>
 
     <script src="./js/script.js"></script>

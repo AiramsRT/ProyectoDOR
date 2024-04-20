@@ -277,98 +277,60 @@ h4 {
     display: flex;
     flex-direction: column;
 }
-
-/* Formulario de contacto */
-#contact_form {
-    width: 60%; 
-    height: auto;
-    margin: 80px auto;
-	border-radius: 10px;  
-	padding-top: 30px;
-	padding-bottom: 20px;  
-    background-color: #fbfbfb; 
-    padding-left: 30px;
-    position: relative;
-    box-shadow: 3px 3px 5px 6px #ccc;
-    text-align: center;
-    text-rendering: optimizeLegibility;
-}
-
-input {
-	background-color: #fbfbfb; 
-	width: 408px; 
-	height: 40px; 
-	border-radius: 5px;  
-	border-style: solid; 
-	border-width: 1px; 
-	border-color: #FF6600; 
-	margin-top: 20px;  
-	padding-left: 10px;
-    margin-bottom: 20px; 
-    align-items: center;
-    box-shadow: 3px 3px 5px 6px #ccc;
-}
-
-textarea {
-      
-      background-color: #fbfbfb; 
-      width: 405px; 
-      height: 150px; 
-      border-radius: 5px;  
-      border-style: solid; 
-      border-width: 1px; 
-      border-color: #FF6600; 
-      margin-top: 20px;  
-      padding-left: 10px;
-      margin-bottom: 20px; 
-      padding-top: 15px; 
-      box-shadow: 3px 3px 5px 6px #ccc;
-  }
-  
-  
-  label {
-      
-      position: absolute;  	
-      margin-bottom: 10%;
-      
-  }
-  
-  
-  button {
-      height: 45px; 
-      padding-left: 5px;
-      padding-right: 5px; 	
-      margin-bottom: 20px; 
-      margin-top: 10px; 	
-      text-transform: uppercase;
-      background-color: #FF6600; 
-      border-color: #FF6600; 
-      border-style: solid; 
-      border-radius: 10px;	
-      width: 420px;   
-      cursor: pointer;
-      box-shadow: 3px 3px 5px 6px #ccc;
-  }
-  
   
   /* FORMULARIO PRESUPUESTO */
 
-#form_presupuesto {
-    width: 60%; 
-    height: auto;
-    margin: 2% auto;
-	padding-bottom: 20px;  
-    background-color: var(--blanco); 
-    border: 0.3em solid var(--naranja);
-    text-align: center;
-
+form h1 {
+    color: var(--naranja);
 }
   form {
-    font-size: 2em;
-    background-color: var(--blanco);  
+    width: 60%; 
+    height: auto;
+    margin: 2% auto; 
+    background-color: var(--blanco); 
+    border: 0.1em solid var(--naranja);
+    font-size: 2.2em;
+    background-color: var(--blanco);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25%;
   }
 
-  
+  form label{
+    width: auto;
+    border: 0.1em solid black; 	
+    margin-bottom: 10%;
+    position: absolute;
+    left: 2%;
+  }
+  form input{
+    width: 20em;
+    border: 0.1em solid var(--naranja);
+    position: absolute;
+    left: 20%;
+  }
+  #presupuesto_textarea{
+    position: relative;
+    left: 2%;
+    top: 30px;
+    border: 1px solid green;
+  }
+
+  form button {
+    position: relative;
+    font-size: 1.5em;
+    width: 8em;
+    margin: 1em;
+    padding: 0.5em;
+    border: 0.1em solid var(--claro);
+    border-radius: 0.5em;
+    background-color: var(--naranja);
+    color: var(--blanco);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+ /* FIN FORMULARIO PRESUPUESTO */
 
   ::-webkit-input-placeholder {
       color: #a8a8a8;

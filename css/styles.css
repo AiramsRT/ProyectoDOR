@@ -1,5 +1,5 @@
 :root {
-    --blanco: #ffffff;
+    --blanco: #E6E6E6;
     --naranja: #FF6600;
     --oscuro: #003366;
     --claro: #336699;
@@ -248,7 +248,7 @@ h4 {
 #contacto_s1,
 #presupuesto_s1 {
     background-color: var(--claro);
-    color: var(--gris);
+    color: var(--naranja);
 }
 
 /* Contenido específico (páginas) */
