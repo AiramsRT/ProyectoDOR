@@ -280,55 +280,59 @@ h4 {
   
   /* FORMULARIO PRESUPUESTO */
 
-form h1 {
-    color: var(--naranja);
-}
+
   form {
+    display: flex;
+    flex-direction: column;
     width: 60%; 
-    height: auto;
-    margin: 2% auto; 
+    margin: 5% auto; 
+    padding: 0.5em;
     background-color: var(--blanco); 
     border: 0.1em solid var(--naranja);
-    font-size: 2.2em;
-    background-color: var(--blanco);
+    font-size: var(--tamaño_p);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 25%;
+    top: 18%;
+    align-items: center;
   }
 
+  form h1 {
+    color: var(--naranja);
+}
+
   form label{
-    width: auto;
-    border: 0.1em solid black; 	
-    margin-bottom: 10%;
-    position: absolute;
-    left: 2%;
+    border: 1px solid blue;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    height:5%;
+    width: 50%;
   }
   form input{
-    width: 20em;
-    border: 0.1em solid var(--naranja);
-    position: absolute;
-    left: 20%;
+    border: 1px solid violet;
+    height:5%;
+    width: 50%;
   }
   #presupuesto_textarea{
-    position: relative;
+    width: 50%;
     left: 2%;
-    top: 30px;
     border: 1px solid green;
   }
 
+    form select{
+        width: 50%;
+        left: 2%;
+        border: 1px solid green;
+    }
   form button {
-    position: relative;
-    font-size: 1.5em;
-    width: 8em;
+    font-size: var(--tamaño_H3);
+    width: 6em;
     margin: 1em;
-    padding: 0.5em;
+    padding: 0.3em;
     border: 0.1em solid var(--claro);
     border-radius: 0.5em;
     background-color: var(--naranja);
     color: var(--blanco);
-    left: 50%;
-    transform: translateX(-50%);
   }
  /* FIN FORMULARIO PRESUPUESTO */
 
