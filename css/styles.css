@@ -279,7 +279,7 @@ h4 {
 }
 
 
-/* FORMULARIO PRESUPUESTO */
+/* FORMULARIOS */
 
 form {
     display: flex;
@@ -345,8 +345,28 @@ form input:invalid, #textarea:invalid, form select:invalid {
     border: 0.2em solid red;
 }
 
+@media screen and (max-width: 720px) {
+    form {
+        width: 50%;
+        align-items: center;
+      }
+      form label, form input, #textarea, form select{
+        width: 100%;
+      }
 
- /* FIN FORMULARIO PRESUPUESTO */
+@media screen and (max-width: 480px) {
+        form {
+            width: 80%;
+            align-items: flex-start;
+            align-items: center;
+          }
+          form label, form input, #textarea, form select{
+            width: 100%;
+          }
+}
+
+ /* FIN FORMULARIOS */
+
   ::-webkit-input-placeholder {
       color: #a8a8a8;
   }
