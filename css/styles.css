@@ -365,7 +365,15 @@ form select:invalid {
 }
 
 @media screen and (max-width: 480px) {
+    #contenido {
+        height: 90%;
+        grid-template-rows: repeat(10, 1fr);
+      }
+    #presupuesto_s1 h1, #contacto_s1 h1 {
+        font-size: var(--tamaño_H2);
+    }
   form {
+    top: 10%;
     width: 80%;
     align-items: flex-start;
     align-items: center;
