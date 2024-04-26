@@ -405,3 +405,52 @@ form select:invalid {
   outline: 0;
   border: 1px solid #ff6600;
 }
+
+/* PORTFOLIO */
+
+.container {
+    padding: 75px 0;
+    margin: 0 auto;
+    width: 1140px;
+
+      
+.gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+}
+      
+.item {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.8s ease;
+        
+&:hover {
+    flex: 7;
+     }
+}
+      
+      .item-1 { 
+        background-image: url('https://somarsa.com/wp-content/uploads/2022/01/impresora-3d-informatica.jpg');
+      }
+      
+      .item-2 { 
+        background-image: url('https://img.freepik.com/fotos-premium/hombre-sujetando-sus-manos-detalle-plastico-amarillo-impresion-impresora-3d-midiendola_156881-4982.jpg');
+      }
+      
+      .item-3 { 
+        background-image: url('https://impresiontresde.com/wp-content/uploads/2016/04/ap_medicas.jpg');
+      }
+      
+      .item-4 { 
+        background-image: url('https://img4.s3wfg.com/web/img/images_uploaded/a/c/ep_archivo_-_impresora_3d_con_la_que_se_fabrican_piezas_para_la_flota_de_renfe.jpg');
+      }
+      
+      .item-5 { 
+        background-image: url('https://somarsa.com/wp-content/uploads/2022/03/escaner-para-empresas.jpg');
+      }
+    }
