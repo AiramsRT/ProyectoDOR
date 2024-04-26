@@ -1,245 +1,245 @@
 :root {
-    --blanco: #E6E6E6;
-    --naranja: #FF6600;
-    --oscuro: #003366;
-    --claro: #336699;
-    --gris: #C0C0C0;
-    --tamaño_H1: 3.8rem;
-    --tamaño_H2: 2.8rem;
-    --tamaño_H3: 1.8rem;
-    --tamaño_H4: 1.6rem;
-    --tamaño_p: 1.6rem;
-    --ancho_completo: 100%;
+  --blanco: #e6e6e6;
+  --naranja: #ff6600;
+  --oscuro: #003366;
+  --claro: #336699;
+  --gris: #c0c0c0;
+  --tamaño_H1: 3.8rem;
+  --tamaño_H2: 2.8rem;
+  --tamaño_H3: 1.8rem;
+  --tamaño_H4: 1.6rem;
+  --tamaño_p: 1.6rem;
+  --ancho_completo: 100%;
 }
 
 /* Globales */
 html,
 body {
-    font-size: 62.5%;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-    background-color: var(--blanco);
-    width: 100%;
-    height: 100%;
-    scroll-snap-type: y mandatory;
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--blanco);
+  width: 100%;
+  height: 100%;
+  scroll-snap-type: y mandatory;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    border: 0;
+  box-sizing: inherit;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 /* Tipografía */
 p {
-    font-size: var(--tamaño_p);
+  font-size: var(--tamaño_p);
 }
 
 h1 {
-    font-size: var(--tamaño_H1);
-    color: var(--blanco);
+  font-size: var(--tamaño_H1);
+  color: var(--blanco);
 }
 
 h2 {
-    font-size: var(--tamaño_H2);
-    color: var(--naranja);
+  font-size: var(--tamaño_H2);
+  color: var(--naranja);
 }
 
 h3 {
-    font-size: var(--tamaño_H3);
+  font-size: var(--tamaño_H3);
 }
 
 h4 {
-    font-size: var(--tamaño_H4);
+  font-size: var(--tamaño_H4);
 }
 
 h1,
 h2,
 h3,
 h4 {
-    text-align: center;
-    font-weight: bold;
-    padding: 2rem;
+  text-align: center;
+  font-weight: bold;
+  padding: 2rem;
 }
 
 /* Estilos generales */
 #contenido {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    top: 10%;
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-auto-rows: auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 10%;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-auto-rows: auto;
 }
 
 /* Menú de navegación */
 #menu {
-    display: flex;
-    position: fixed;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 5;
-    width: 100%;
-    height: 10%;
-    background-color: var(--blanco);
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 5;
+  width: 100%;
+  height: 10%;
+  background-color: var(--blanco);
 }
 
 #logo {
-    max-width: 25rem;
-    z-index: 5;
+  max-width: 25rem;
+  z-index: 5;
 }
 
 #navegacion ul {
-    display: flex;
+  display: flex;
 }
 
 #navegacion ul li {
-    margin-left: 3rem;
+  margin-left: 3rem;
 }
 
 #navegacion ul li a {
-    color: var(--claro);
-    text-decoration: none;
-    font-size: var(--tamaño_H4);
-    font-weight: bold;
-    text-transform: uppercase;
+  color: var(--claro);
+  text-decoration: none;
+  font-size: var(--tamaño_H4);
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 #navegacion ul li a:hover {
-    color: var(--naranja);
-    text-decoration: .3rem underline var(--gris);
+  color: var(--naranja);
+  text-decoration: 0.3rem underline var(--gris);
 }
 
 #menu-toggle {
-    display: none;
+  display: none;
 }
 
 /* Tablet */
 @media screen and (max-width: 720px) {
-    #menu {
-        flex-direction: column;
-        justify-content: center;
-    }
+  #menu {
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    #logo {
-        max-width: 25rem;
-        padding: 1rem;
-    }
+  #logo {
+    max-width: 25rem;
+    padding: 1rem;
+  }
 }
 
 /* Móvil */
 @media screen and (max-width: 480px) {
-    #menu {
-        display: flex;
-        flex-direction: row;
-        padding: 2rem;
-    }
+  #menu {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+  }
 
-    #logo {
-        max-width: 18rem;
-    }
+  #logo {
+    max-width: 18rem;
+  }
 
-    #menu-toggle {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        padding: 0;
-        width: 4rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: auto;
-    }
+  #menu-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+  }
 
-    #menu-toggle span {
-        background-color: var(--naranja);
-        height: .21rem;
-        width: 60%;
-        display: block;
-    }
+  #menu-toggle span {
+    background-color: var(--naranja);
+    height: 0.21rem;
+    width: 60%;
+    display: block;
+  }
 
-    #menu-toggle span:nth-child(2) {
-        margin: .6rem 0;
-    }
+  #menu-toggle span:nth-child(2) {
+    margin: 0.6rem 0;
+  }
 
-    #navegacion ul {
-        display: none;
-    }
+  #navegacion ul {
+    display: none;
+  }
 
-    #menu.open .navegacion ul {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: var(--ancho_completo);
-        right: 0;
-        background-color: var(--claro);
-        width: 40%;
-    }
+  #menu.open .navegacion ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: var(--ancho_completo);
+    right: 0;
+    background-color: var(--claro);
+    width: 40%;
+  }
 
-    #menu.open .navegacion ul li {
-        margin: 0;
-    }
+  #menu.open .navegacion ul li {
+    margin: 0;
+  }
 
-    #menu.open .navegacion ul li a {
-        color: var(--blanco);
-        padding: 1rem;
-        display: block;
-        border-bottom: .1rem solid var(--gris);
-    }
+  #menu.open .navegacion ul li a {
+    color: var(--blanco);
+    padding: 1rem;
+    display: block;
+    border-bottom: 0.1rem solid var(--gris);
+  }
 
-    #menu.open .navegacion ul li a:hover {
-        color: var(--naranja);
-        box-shadow: .2rem #004e98;
-    }
+  #menu.open .navegacion ul li a:hover {
+    color: var(--naranja);
+    box-shadow: 0.2rem #004e98;
+  }
 }
 
 /* Footer */
 #footer {
-    background-color: var(--claro);
-    color: var(--blanco);
-    width: 100%;
+  background-color: var(--claro);
+  color: var(--blanco);
+  width: 100%;
 }
 
 #elementos {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    text-align: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  text-align: center;
 }
 
 @media screen and (max-width: 480px) {
-    #elementos {
-        flex-direction: column;
-    }
+  #elementos {
+    flex-direction: column;
+  }
 }
 
 #elementos section {
-    background-color: var(--claro);
+  background-color: var(--claro);
 }
 
 #elementos section p {
-    margin: 10px;
+  margin: 10px;
 }
 
 #footer a {
-    text-decoration: none;
-    color: var(--blanco);
+  text-decoration: none;
+  color: var(--blanco);
 }
 
 #footer_ico {
-    height: 60px;
-    width: auto;
+  height: 60px;
+  width: auto;
 }
 
 #waves {
-    display: flex;
-    width: 100%;
-    background-color: var(--blanco);
+  display: flex;
+  width: 100%;
+  background-color: var(--blanco);
 }
 
 /* Estilos comunes secciones */
@@ -247,8 +247,8 @@ h4 {
 #servicios_s1,
 #contacto_s1,
 #presupuesto_s1 {
-    background-color: var(--claro);
-    color: var(--naranja);
+  background-color: var(--claro);
+  color: var(--naranja);
 }
 
 /* Contenido específico (páginas) */
@@ -257,134 +257,143 @@ h4 {
 
 /* Top banner (landing) */
 #banner {
-    grid-row: 1;
-    grid-auto-rows: auto;
+  grid-row: 1;
+  grid-auto-rows: auto;
 }
 
 #banner_img {
-    border-top: 1rem solid;
-    border-bottom: 1rem solid;
-    border-color: var(--gris);
-    width: var(--ancho_completo);
-    box-shadow: 3px 3px 5px 6px #ccc;
+  border-top: 1rem solid;
+  border-bottom: 1rem solid;
+  border-color: var(--gris);
+  width: var(--ancho_completo);
+  box-shadow: 3px 3px 5px 6px #ccc;
 }
 
 /* Servicios */
 #servicios_landing {
-    grid-row: 2;
-    width: 100%;
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
+  grid-row: 2;
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
 }
-
 
 /* FORMULARIOS */
 
 form {
-    display: flex;
-    flex-direction: column;
-    width: 60%; 
-    margin: 5% auto; 
-    padding: 0.5em;
-    font-size: var(--tamaño_p);
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 18%;
-    align-items: center;
-  }
-
-  form h1 {
-    color: var(--naranja);
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 5% auto;
+  padding: 0.5em;
+  font-size: var(--tamaño_p);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 18%;
+  align-items: center;
 }
 
-  form label{
-    margin-top: 3%;
-    margin-bottom: 1%;
-    height:5%;
-    width: 50%;
-  }
-  
-  form input, #textarea{
-    border: 1px solid var(--naranja);
-    height:5%;
-    width: 50%;
-    border-radius: 0.3em;
-    box-shadow: 0em 0.2em 0.5em rgba(0, 0, 0, 0.5);
-    padding: 0.2em;
-  }
-
-form select{
-        width: 50%;
-        left: 2%;
-        border: 1px solid var(--naranja);
-        border-radius: 0.3em;
-    }
-
-  form button {
-    font-size: var(--tamaño_H3);
-    width: 6em;
-    margin: 1em;
-    padding: 0.3em;
-    border: 0.1em solid var(--claro);
-    border-radius: 0.5em;
-    background-color: var(--naranja);
-    color: var(--blanco);
-  }
-
-form input:focus, #textarea:focus, form select:focus {
-    outline: none;
+form h1 {
+  color: var(--naranja);
 }
 
-form input:valid, #textarea:valid, form select:valid {
-    border: 0.2em solid green;
+form label {
+  margin-top: 3%;
+  margin-bottom: 1%;
+  height: 5%;
+  width: 50%;
 }
 
-form input:invalid, #textarea:invalid, form select:invalid {
-    border: 0.2em solid red;
+form input,
+#textarea {
+  border: 1px solid var(--naranja);
+  height: 5%;
+  width: 50%;
+  border-radius: 0.3em;
+  box-shadow: 0em 0.2em 0.5em rgba(0, 0, 0, 0.5);
+  padding: 0.2em;
+}
+
+form select {
+  width: 50%;
+  left: 2%;
+  border: 1px solid var(--naranja);
+  border-radius: 0.3em;
+}
+
+form button {
+  font-size: var(--tamaño_H3);
+  width: 6em;
+  margin: 1em;
+  padding: 0.3em;
+  border: 0.1em solid var(--claro);
+  border-radius: 0.5em;
+  background-color: var(--naranja);
+  color: var(--blanco);
+}
+
+form input:focus,
+#textarea:focus,
+form select:focus {
+  outline: none;
+}
+
+form input:valid,
+#textarea:valid,
+form select:valid {
+  border: 0.2em solid green;
+}
+
+form input:invalid,
+#textarea:invalid,
+form select:invalid {
+  border: 0.2em solid red;
 }
 
 @media screen and (max-width: 720px) {
-    form {
-        width: 50%;
-        align-items: center;
-      }
-      form label, form input, #textarea, form select{
-        width: 100%;
-      }
-
-@media screen and (max-width: 480px) {
-        form {
-            width: 80%;
-            align-items: flex-start;
-            align-items: center;
-          }
-          form label, form input, #textarea, form select{
-            width: 100%;
-          }
+  form {
+    width: 50%;
+    align-items: center;
+  }
+  form label,
+  form input,
+  #textarea,
+  form select {
+    width: 100%;
+  }
 }
 
- /* FIN FORMULARIOS */
+@media screen and (max-width: 480px) {
+  form {
+    width: 80%;
+    align-items: flex-start;
+    align-items: center;
+  }
+  form label,
+  form input,
+  #textarea,
+  form select {
+    width: 100%;
+  }
+}
 
-  ::-webkit-input-placeholder {
-      color: #a8a8a8;
-  }
-  
-  
-  ::-webkit-textarea-placeholder {
-      color: #a8a8a8;
-  }
-  
-  
-  .formulario input:focus {
-      outline:0;
-      border: 1px solid #FF6600;
-  }
-  
-  
-  .formulario textarea:focus {
-      outline:0;
-      border: 1px solid #FF6600;
-  }
-  
+/* FIN FORMULARIOS */
+
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+
+::-webkit-textarea-placeholder {
+  color: #a8a8a8;
+}
+
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid #ff6600;
+}
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px solid #ff6600;
+}
