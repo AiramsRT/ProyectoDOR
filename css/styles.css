@@ -278,117 +278,61 @@ h4 {
     flex-direction: column;
 }
 
-/* Formulario de contacto */
-#contact_form {
+
+/* FORMULARIO PRESUPUESTO */
+
+form {
+    display: flex;
+    flex-direction: column;
     width: 60%; 
-    height: auto;
-    margin: 80px auto;
-	border-radius: 10px;  
-	padding-top: 30px;
-	padding-bottom: 20px;  
-    background-color: #fbfbfb; 
-    padding-left: 30px;
-    position: relative;
-    box-shadow: 3px 3px 5px 6px #ccc;
-    text-align: center;
-    text-rendering: optimizeLegibility;
-}
-
-input {
-	background-color: #fbfbfb; 
-	width: 408px; 
-	height: 40px; 
-	border-radius: 5px;  
-	border-style: solid; 
-	border-width: 1px; 
-	border-color: #FF6600; 
-	margin-top: 20px;  
-	padding-left: 10px;
-    margin-bottom: 20px; 
+    margin: 5% auto; 
+    padding: 0.5em;
+    font-size: var(--tamaño_p);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 18%;
     align-items: center;
-    box-shadow: 3px 3px 5px 6px #ccc;
+  }
+
+  form h1 {
+    color: var(--naranja);
 }
 
-textarea {
-      
-      background-color: #fbfbfb; 
-      width: 405px; 
-      height: 150px; 
-      border-radius: 5px;  
-      border-style: solid; 
-      border-width: 1px; 
-      border-color: #FF6600; 
-      margin-top: 20px;  
-      padding-left: 10px;
-      margin-bottom: 20px; 
-      padding-top: 15px; 
-      box-shadow: 3px 3px 5px 6px #ccc;
+  form label{
+    margin-top: 3%;
+    margin-bottom: 1%;
+    height:5%;
+    width: 50%;
   }
   
-  
-  label {
-      
-      position: absolute;  	
-      margin-bottom: 10%;
-      
+  form input, #presupuesto_textarea{
+    border: 1px solid var(--naranja);
+    height:5%;
+    width: 50%;
+    border-radius: 0.3em;
+    box-shadow: 0em 0.2em 0.5em rgba(0, 0, 0, 0.5);
+    padding: 0.2em;
   }
-  
-  
-  button {
-      height: 45px; 
-      padding-left: 5px;
-      padding-right: 5px; 	
-      margin-bottom: 20px; 
-      margin-top: 10px; 	
-      text-transform: uppercase;
-      background-color: #FF6600; 
-      border-color: #FF6600; 
-      border-style: solid; 
-      border-radius: 10px;	
-      width: 420px;   
-      cursor: pointer;
-      box-shadow: 3px 3px 5px 6px #ccc;
-  }
-  
-  
-  button p {
-      color: #fff; 
-  }
-  
-  button:hover{
-    background:#003366;
-  }
-  
-  span {
-      color: #FF6600; 
-  }
-  
-  
-  .aviso {
-      font-size: 13px;  
-      color: #003366;  
-  }
-  
-  
-  h1 { 
-      color: var(--naranja);
-  }
-  
-  h3 {
-      font-size: 16px; 
-      padding-bottom: 30px;
-      color: var(--oscuro);   
-      text-decoration: solid;
-  }
-  
-  
-  p {
-      font-size: 14px; 
-      color: #003366; 
-      text-decoration: solid;
-  }
-  
 
+form select{
+        width: 50%;
+        left: 2%;
+        border: 1px solid var(--naranja);
+        border-radius: 0.3em;
+    }
+
+  form button {
+    font-size: var(--tamaño_H3);
+    width: 6em;
+    margin: 1em;
+    padding: 0.3em;
+    border: 0.1em solid var(--claro);
+    border-radius: 0.5em;
+    background-color: var(--naranja);
+    color: var(--blanco);
+  }
+ /* FIN FORMULARIO PRESUPUESTO */
   ::-webkit-input-placeholder {
       color: #a8a8a8;
   }
