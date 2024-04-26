@@ -306,7 +306,7 @@ form {
     width: 50%;
   }
   
-  form input, #presupuesto_textarea{
+  form input, #textarea{
     border: 1px solid var(--naranja);
     height:5%;
     width: 50%;
