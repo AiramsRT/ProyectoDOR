@@ -423,10 +423,9 @@ form select:invalid {
       
 .item {
     flex: 1;
-    height: 100%;
     background-position: center;
     background-size: cover;
-    background-repeat: none;
+    background-repeat: no-repeat;
     transition: flex 0.8s ease;
         
 &:hover {
