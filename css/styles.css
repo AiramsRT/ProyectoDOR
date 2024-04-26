@@ -332,6 +332,20 @@ form select{
     background-color: var(--naranja);
     color: var(--blanco);
   }
+
+form input:focus, #textarea:focus, form select:focus {
+    outline: none;
+}
+
+form input:valid, #textarea:valid, form select:valid {
+    border: 0.2em solid green;
+}
+
+form input:invalid, #textarea:invalid, form select:invalid {
+    border: 0.2em solid red;
+}
+
+
  /* FIN FORMULARIO PRESUPUESTO */
   ::-webkit-input-placeholder {
       color: #a8a8a8;
