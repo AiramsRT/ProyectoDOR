@@ -8,6 +8,7 @@
   --tamaño_H2: 2.8rem;
   --tamaño_H3: 1.8rem;
   --tamaño_H4: 1.6rem;
+  --tamaño_H5: 1.2rem;
   --tamaño_p: 1.6rem;
 }
 
@@ -26,7 +27,6 @@ body {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -45,7 +45,6 @@ h1 {
 
 h2 {
   font-size: var(--tamaño_H2);
-  color: var(--naranja);
 }
 
 h3 {
@@ -56,6 +55,11 @@ h4 {
   font-size: var(--tamaño_H4);
 }
 
+h5 {
+  font-size: var(--tamaño_H5);
+}
+
+
 h1,
 h2,
 h3,
@@ -65,11 +69,16 @@ h4 {
   padding: 2rem;
 }
 
-/* Estilos generales */
+/* Estilos comunes secciones */
+#portfolio_s1,
+#servicios_s1,
+#contacto_s1,
+#presupuesto_s1 {
+  background-color: var(--claro);
+}
+
 #contenido {
-  width: 100%;
   height: 100%;
-  top: 10%;
 }
 
 /* Menú de navegación */
@@ -77,15 +86,14 @@ h4 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  z-index: 5;
-  width: 100%;
   height: 10%;
   background-color: var(--blanco);
+  position: sticky;
+  top: 0;
 }
 
 #logo {
   max-width: 25rem;
-  z-index: 5;
 }
 
 #navegacion ul {
@@ -122,18 +130,29 @@ h4 {
   }
 }
 
+@media screen and (max-width: 480px) {
+  #menu {
+    font-size: var(--tamaño_H5);
+  }
+
+  #logo {
+    max-width: 25rem;
+    padding: 1rem;
+  }
+}
+
 /* Footer */
 #footer {
   background-color: var(--claro);
   color: var(--blanco);
   width: 100%;
-  bottom: 0;
 }
 
 #elementos {
   display: flex;
   width: 100%;
   justify-content: space-around;
+  align-items: center;
   text-align: center;
 }
 
@@ -161,16 +180,6 @@ h4 {
   width: auto;
 }
 
-/* Estilos comunes secciones */
-#portfolio_s1,
-#servicios_s1,
-#contacto_s1,
-#presupuesto_s1 {
-  background-color: var(--claro);
-  color: var(--naranja);
-}
-
-/* Contenido específico (páginas) */
 
 /* *** *** L A N D I N G *** *** */
 
@@ -186,24 +195,6 @@ h4 {
 
 /* Nosotros (landing) */
 
-#nosotros_landin{
-  width: 100%; 
-  height: 700px; 
-  background-image: url('../img/nosotros.webp'); 
-  background-size: cover;
-  background-position: center; 
-  background-repeat: no-repeat; 
-}
-
-#contenedor-nosotros::after {
-  content: ""; 
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); 
-  pointer-events: none;
-}
 
 /* FORMULARIOS */
 
@@ -211,12 +202,9 @@ form {
   display: flex;
   flex-direction: column;
   width: 60%;
-  margin: 5% auto;
-  padding: 0.5em;
+  margin: 0 auto;
+  padding: 3.5em;
   font-size: var(--tamaño_p);
-  left: 50%;
-  transform: translateX(-50%);
-  top: 25px;
   align-items: center;
 }
 
@@ -243,7 +231,6 @@ form input,
 
 form select {
   width: 50%;
-  left: 2%;
   border: 1px solid var(--naranja);
   border-radius: 0.3em;
 }
@@ -274,7 +261,7 @@ form select:valid {
 form input:invalid,
 #textarea:invalid,
 form select:invalid {
-  border: 0.2em solid red;
+  border: 0.2em solid var(--naranja);
 }
 
 @media screen and (max-width: 768px) {
@@ -299,7 +286,6 @@ form select:invalid {
   }
 
   form {
-    top: 10%;
     width: 80%;
     align-items: flex-start;
     align-items: center;
@@ -312,8 +298,6 @@ form select:invalid {
     width: 100%;
   }
 }
-
-/* FIN FORMULARIOS */
 
 ::-webkit-input-placeholder {
   color: #a8a8a8;
@@ -332,9 +316,9 @@ form select:invalid {
   outline: 0;
   border: 1px solid #ff6600;
 }
+/* FIN FORMULARIOS */
 
 /* PORTFOLIO */
-
 #caratulas {
   box-shadow: 0em 0em 3em black;
   display: flex;
@@ -359,7 +343,6 @@ form select:invalid {
 @media screen and (max-width: 480px) {
 
   #caratulas {
-    top: 36%;
     height: 65%;
   }
 
@@ -368,10 +351,16 @@ form select:invalid {
   }
 }
 
+
+/* Backgronds de contenidos*/
 .presupuesto {
-  /*background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/back_presupuesto.jpg);*/
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/back_presupuesto.jpg);
   background-size: cover;
   color: white;
-  background-position: center; 
-  background-repeat: no-repeat;
+}
+
+.contacto_bg {
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/contacto_bg.webp);
+  background-size: cover;
+  color: white;
 }
