@@ -111,10 +111,6 @@ h4 {
   text-decoration: 0.3rem underline var(--gris);
 }
 
-#menu-toggle {
-  display: none;
-}
-
 /* Tablet */
 @media screen and (max-width: 768px) {
   #menu {
