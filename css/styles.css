@@ -194,8 +194,21 @@ h4 {
 }
 
 /* Nosotros (landing) */
+#nosotros_landing {
+  display: flex;
+  flex-direction: column;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+}
 
+#nosotros_landing_card {
+  width: 40%;
+}
 
+#nosotros_landing_card > p {
+  padding: 1rem;
+}
 /* FORMULARIOS */
 
 form {
@@ -316,6 +329,7 @@ form select:invalid {
   outline: 0;
   border: 1px solid #ff6600;
 }
+
 /* FIN FORMULARIOS */
 
 /* PORTFOLIO */
@@ -353,14 +367,22 @@ form select:invalid {
 
 
 /* Backgronds de contenidos*/
-.presupuesto {
-  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/back_presupuesto.jpg);
+.presupuesto,
+.contacto_bg,
+.nosotros_bg {
   background-size: cover;
   color: white;
 }
 
+.presupuesto {
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/back_presupuesto.jpg);
+}
+
 .contacto_bg {
   background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/contacto_bg.webp);
-  background-size: cover;
-  color: white;
+}
+
+.nosotros_bg {
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/nosotros.webp);
+  background-position-y: center;
 }
