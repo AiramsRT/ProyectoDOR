@@ -396,10 +396,6 @@ form select:invalid {
 
 /* PORTFOLIO */
 
-#contenido_portfolio {
-  
-}
-
 #caratulas {
   box-shadow: 0em 0em 3em black;
   display: flex;
