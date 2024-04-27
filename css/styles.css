@@ -232,12 +232,6 @@ h4 {
   width: auto;
 }
 
-#waves {
-  display: flex;
-  width: 100%;
-  background-color: var(--blanco);
-}
-
 /* Estilos comunes secciones */
 #portfolio_s1,
 #servicios_s1,
