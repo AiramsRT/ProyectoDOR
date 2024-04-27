@@ -116,7 +116,7 @@ h4 {
 }
 
 /* Tablet */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   #menu {
     flex-direction: column;
     justify-content: center;
@@ -338,7 +338,7 @@ form select:invalid {
   border: 0.2em solid red;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   form {
     width: 50%;
     align-items: center;
@@ -396,21 +396,42 @@ form select:invalid {
 
 /* PORTFOLIO */
 
+#contenido_portfolio {
+  
+}
+
 #caratulas {
+  box-shadow: 0em 0em 3em black;
   display: flex;
   flex-direction: row;
-  width: 50%;
-  height: 40%;
+  width: 90%;
+  margin: auto;
+  height: 75%;
+  position: relative; 
+  top: 42%; 
+  transform: translateY(-50%);
 }
 
 #imagen{
   width: 0;
-  height: 300px;
+  height: 100%;
   flex-grow: 1;
   object-fit: cover;
-  transition: flex 0.3s;
+  transition: flex 0.4s;
 }
 
 #imagen:hover{
   flex-grow: 2;
+}
+
+/* Media Query para mostrar 3 imagenes del portfolio en version movil*/
+@media screen and (max-width: 480px) {
+
+#caratulas {
+  top:36%;
+  height: 65%;
+}
+.no_mq{
+  display: none;
+}
 }
