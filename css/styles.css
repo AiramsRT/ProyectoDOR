@@ -214,7 +214,7 @@ form {
   flex-direction: column;
   width: 60%;
   margin: 0 auto;
-  padding: 3.5em;
+  padding: 3.5em 0;
   font-size: var(--tamaño_p);
   align-items: center;
 }
