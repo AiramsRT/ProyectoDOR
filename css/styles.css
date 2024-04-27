@@ -338,12 +338,9 @@ form select:invalid {
 #caratulas {
   box-shadow: 0em 0em 3em black;
   display: flex;
-  flex-direction: row;
   width: 90%;
-  margin: auto;
+  margin: 2rem auto;
   height: 75%;
-  top: 42%;
-  transform: translateY(-50%);
 }
 
 #imagen {
