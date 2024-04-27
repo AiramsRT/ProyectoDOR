@@ -252,10 +252,6 @@ h4 {
 /* *** *** L A N D I N G *** *** */
 
 /* Top banner (landing) */
-#banner {
-  grid-row: 1;
-  grid-auto-rows: auto;
-}
 
 #banner_img {
   border-top: 1rem solid;
@@ -263,6 +259,29 @@ h4 {
   border-color: var(--gris);
   width: 100%;
   box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+#nosotros_landing {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+#nosotros_landing_img {
+  width: 30%;
+  height: auto;
+  border-radius: 10%;
+}
+
+#nosotros_landing_card {
+  width: 50%;
+  height: auto;
+}
+
+#nosotros_landing_card > p {
+  margin: 1rem;
 }
 
 /* FORMULARIOS */
