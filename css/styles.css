@@ -19,7 +19,7 @@ body {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 *,
@@ -85,6 +85,7 @@ h4 {
   justify-content: space-around;
   align-items: center;
   height: 10%;
+  padding: 2rem;
   background-color: var(--blanco);
   position: sticky;
   top: 0;
@@ -129,10 +130,15 @@ h4 {
 }
 
 @media screen and (max-width: 480px) {
-  #menu {
-    font-size: var(--tamaño_H5);
+  #navegacion ul li {
+    margin-left: 0;
+    padding: 0.3rem;
   }
+  #navegacion ul{
+    flex-direction: column;
+    text-align: center;
 
+  }
   #logo {
     max-width: 25rem;
     padding: 1rem;
@@ -204,6 +210,18 @@ h4 {
   width: 40%;
 }
 
+@media screen and (max-width: 768px) {
+  #nosotros_landing_card {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #nosotros_landing_card {
+    width: 90%;
+  }
+}
+
 #nosotros_landing_card > p {
   padding: 1rem;
 }
@@ -212,7 +230,7 @@ h4 {
 form {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   padding: 3.5em 0;
   font-size: var(--tamaño_p);
@@ -248,7 +266,7 @@ form select {
 
 form button {
   font-size: var(--tamaño_H3);
-  width: 6em;
+  width: 12em;
   margin: 1em;
   padding: 0.3em;
   border: 0.1em solid var(--claro);
@@ -331,31 +349,29 @@ form select:invalid {
 /* FIN FORMULARIOS */
 
 /* PORTFOLIO */
-#caratulas {
-  box-shadow: 0em 0em 3em black;
+#portfolio {
   display: flex;
   width: 90%;
-  margin: 2rem auto;
-  height: 75%;
+  margin: 0 auto;
 }
 
-#imagen {
+#portfolio_imagen {
   width: 0;
-  height: 100%;
+  height: 650px;
   flex-grow: 1;
   object-fit: cover;
   transition: flex 0.4s;
 }
 
-#imagen:hover {
+#portfolio_imagen:hover {
   flex-grow: 2;
 }
 
 /* Media Query para mostrar 3 imagenes del portfolio en version movil*/
 @media screen and (max-width: 480px) {
 
-  #caratulas {
-    height: 65%;
+  #portfolio {
+    height: 100%;
   }
 
   .no_mq {
@@ -365,12 +381,7 @@ form select:invalid {
 
 
 /* Backgronds de contenidos*/
-.presupuesto,
-.contacto_bg,
-.nosotros_bg {
-  background-size: cover;
-  color: white;
-}
+
 
 .presupuesto {
   background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/back_presupuesto.jpg);
@@ -383,4 +394,18 @@ form select:invalid {
 .nosotros_bg {
   background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/nosotros.webp);
   background-position-y: center;
+}
+
+.portfolio_bg {
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/back_portfolio.webp);
+}
+
+.presupuesto,
+.contacto_bg,
+.nosotros_bg,
+.portfolio_bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
 }
