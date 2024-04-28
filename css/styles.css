@@ -361,9 +361,9 @@ form select:invalid {
 /* PORTFOLIO */
 #portfolio {
   display: flex;
-  width: 100%;
-  border: 0.4em solid var(--naranja);
-  box-sizing: border-box;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem 0;
 }
 
 #portfolio_imagen {
@@ -391,7 +391,7 @@ form select:invalid {
 }
 
 
-/* Backgronds de contenidos*/
+/* Backgrounds de contenidos*/
 
 
 .presupuesto {
