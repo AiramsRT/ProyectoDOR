@@ -425,11 +425,11 @@ form select:invalid {
 /* ---- SERVICIOS ---- */
 
 #servicios{
-  display: grid;
-  grid-template-columns: 100%; 
-  grid-gap: 10px;
-  width: 100%;
-
+  display: flex;
+  flex-direction: column;
+  grid-gap: 2em;
+  width: 90%;
+  justify-content: center;
 }
 
 #seccion_servicios{

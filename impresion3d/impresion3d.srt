@@ -1,0 +1,95 @@
+﻿1
+00:00:00,000 --> 00:00:06,090
+Por años hemos usado las impresoras para hacer libros periódicos empaques
+
+2
+00:00:06,100 --> 00:00:10,490
+y mucho más tal vez hayas escuchado sobre la impresión
+
+3
+00:00:10,500 --> 00:00:16,090
+3D la cual te permite convertir un modelo digital en un objeto tangible
+
+4
+00:00:16,100 --> 00:00:18,590
+y tridimensional como una alcancía,
+
+5
+00:00:18,600 --> 00:00:19,790
+en forma de cerdito,
+
+6
+00:00:19,800 --> 00:00:26,590
+veamos cómo funciona en tres pasos básicos paso uno comienza con un diseño virtual
+
+7
+00:00:26,600 --> 00:00:31,890
+algunos usan programas especializados para hacer un modelo preciso de lo que quieren
+
+8
+00:00:31,900 --> 00:00:39,290
+crear este funciona como un plano que la impresora 3D leerá paso
+
+9
+00:00:39,300 --> 00:00:45,590
+2 el modelo se parten cientos e incluso miles de capas delgadas y horizontales por
+
+10
+00:00:45,600 --> 00:00:52,590
+medio de un proceso llamado slicing paso 3 todas las capas son enviadas a la impresora
+
+11
+00:00:52,600 --> 00:00:57,590
+3D hay muchas clases de impresoras 3D pero la mayoría tiene una boquilla por donde
+
+12
+00:00:57,600 --> 00:00:59,690
+sale un material semilíquido usualmente.
+
+13
+00:00:59,900 --> 00:01:02,390
+Para imprimir cada una de las capas,
+
+14
+00:01:02,400 --> 00:01:06,590
+la boquilla se mueve alrededor imprimiendo capa sobre capa
+
+15
+00:01:06,600 --> 00:01:12,290
+siguiendo el modelo digital dependiendo de la impresora y la complejidad del diseño.
+
+16
+00:01:12,300 --> 00:01:17,890
+Esto puede tomar desde unas pocas horas hasta varios días y así nomás has
+
+17
+00:01:17,900 --> 00:01:23,590
+impreso un objeto 3D la impresión 3D ha dado a los ingenieros diseñadores,
+
+18
+00:01:23,600 --> 00:01:27,790
+simplemente a cualquier persona la habilidad de crear objetos complejos,
+
+19
+00:01:27,800 --> 00:01:30,790
+que antes no habían podido hacer los doctores.
+
+20
+00:01:30,800 --> 00:01:35,290
+Están usando impresión 3D para hacer prótesis y algunas compañías han
+
+21
+00:01:35,300 --> 00:01:39,890
+usado impreso de gran escala para crear edificios y autos a medida que
+
+22
+00:01:39,900 --> 00:01:43,790
+la tecnología continúe siendo más precisa rápida y económica sus
+
+23
+00:01:43,800 --> 00:01:50,390
+aplicaciones continuarán aumentando ese festival
+
+24
+00:01:50,400 --> 00:01:53,390
+creando oportunidades para una vida mejor.
