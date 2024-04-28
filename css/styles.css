@@ -92,6 +92,7 @@ h4 {
   background-color: var(--blanco);
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 #logo {
@@ -138,10 +139,13 @@ h4 {
     padding: 0.3rem;
   }
 
+  #navegacion ul li a {
+    font-size: 1.3rem;
+  }
+
   #navegacion ul {
     flex-direction: column;
     text-align: center;
-
   }
 
   #logo {
