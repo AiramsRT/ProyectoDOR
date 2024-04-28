@@ -200,7 +200,7 @@ h4 {
 /* Nosotros (landing) */
 #nosotros_landing {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   object-fit: cover;
   justify-content: center;
   align-items: center;
@@ -225,6 +225,16 @@ h4 {
 #nosotros_landing_card > p {
   padding: 1rem;
 }
+
+#video_landing video {
+  border: 2px solid var(--naranja);
+  width: 100%;
+  height: auto; 
+  max-width: 120em;
+  margin: 5em;
+}
+
+
 /* FORMULARIOS */
 
 form {
@@ -351,8 +361,9 @@ form select:invalid {
 /* PORTFOLIO */
 #portfolio {
   display: flex;
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  border: 0.4em solid var(--naranja);
+  box-sizing: border-box;
 }
 
 #portfolio_imagen {
@@ -418,10 +429,13 @@ form select:invalid {
   grid-template-columns: 100%; 
   grid-gap: 10px;
   width: 100%;
+
 }
 
 #seccion_servicios{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border: 0.4em solid var(--naranja);
+  box-sizing: border-box;
 }
 
 #seccion_servicios a img{
