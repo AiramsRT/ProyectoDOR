@@ -137,11 +137,13 @@ h4 {
     margin-left: 0;
     padding: 0.3rem;
   }
-  #navegacion ul{
+
+  #navegacion ul {
     flex-direction: column;
     text-align: center;
 
   }
+
   #logo {
     max-width: 25rem;
     padding: 1rem;
@@ -202,41 +204,56 @@ h4 {
 
 /* Nosotros (landing) */
 #nosotros_landing {
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: 1fr 1fr;
+  box-sizing: border-box;
+  padding: 5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#nosotros_landing_card {
+  grid-row: 1;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+#nosotros_landing_card p {
+  line-height: 1.4;
+  padding: .6rem;
+}
+
+#video_landing {
   display: flex;
-  flex-direction: row;
-  object-fit: cover;
   justify-content: center;
   align-items: center;
 }
 
-#nosotros_landing_card {
-  width: 40%;
+#video_landing video {
+  grid-row: 1;
+  grid-column: 2/3;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
+  #nosotros_landing {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
   #nosotros_landing_card {
-    width: 75%;
+    grid-row: 1;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  #video_landing video {
+    grid-row: 2;
+    width: 80%;
   }
 }
-
-@media screen and (max-width: 480px) {
-  #nosotros_landing_card {
-    width: 90%;
-  }
-}
-
-#nosotros_landing_card > p {
-  padding: 1rem;
-}
-
-#video_landing video {
-  border: 2px solid var(--naranja);
-  width: 100%;
-  height: auto; 
-  max-width: 120em;
-  margin: 5em;
-}
-
 
 /* FORMULARIOS */
 
@@ -426,7 +443,7 @@ form select:invalid {
 
 
 /* ---- SERVICIOS ---- */
-#servicios{
+#servicios {
   display: flex;
   flex-direction: column;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
@@ -454,7 +471,7 @@ form select:invalid {
 }
 
 
-#seccion_servicios{
+#seccion_servicios {
   display: grid;
   align-items: center;
   gap: 1.6rem;
@@ -464,10 +481,10 @@ form select:invalid {
   padding: 2rem;
   background-size: cover;
   color: var(--blanco);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-#seccion_servicios a img{
+#seccion_servicios a img {
   width: 100%;
   border-radius: 2%;
   border: 0.6em solid var(--blanco);
@@ -479,7 +496,7 @@ form select:invalid {
   grid-column: 2/3;
   font-size: 1.7rem;
   line-height: 1.4;
-  
+
 }
 
 #seccion_servicios h2 {
@@ -490,24 +507,23 @@ form select:invalid {
 
 @media screen and (max-width: 768px) {
 
-  #seccion_servicios{
+  #seccion_servicios {
     padding: 1.4rem;
   }
-  
+
 
   #seccion_servicios h2 {
     grid-row: 1;
     grid-column: 1;
   }
 
-  #seccion_servicios a img{
+  #seccion_servicios a img {
     grid-row: 2;
     grid-column: 1;
   }
-  
+
   #seccion_servicios p {
     grid-row: 3;
     grid-column: 1;
   }
 }
-
