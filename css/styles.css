@@ -164,6 +164,7 @@ h4 {
 #elementos {
   display: flex;
   width: 100%;
+  padding: 2rem;
   justify-content: space-around;
   align-items: center;
   text-align: center;
@@ -189,7 +190,7 @@ h4 {
 }
 
 #footer_ico {
-  height: 60px;
+  height: 45px;
   width: auto;
 }
 
@@ -554,7 +555,7 @@ form select:invalid {
   margin: 0 auto;
   width: 80%;
   row-gap: 2rem;
-  padding: 4rem;
+  padding: 7rem;
 }
 
 .card1 {
@@ -608,6 +609,10 @@ form select:invalid {
 
 
 @media screen and (max-width: 768px) {
+
+  #servicios {
+    padding: 3rem;
+  }
 
   #seccion_servicios {
     padding: 1.4rem;
