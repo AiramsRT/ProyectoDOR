@@ -443,7 +443,7 @@ form select:invalid {
   form input,
   #textarea,
   form select {
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -465,7 +465,7 @@ form select:invalid {
   form input,
   #textarea,
   form select {
-    width: 100%;
+    width: 90%;
   }
 }
 
