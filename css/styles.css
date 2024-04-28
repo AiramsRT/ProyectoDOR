@@ -1,6 +1,6 @@
 :root {
   --blanco: #e6e6e6;
-  --naranja: #ff6600;
+  --naranja: rgb(255, 102, 0);
   --oscuro: #003366;
   --claro: #336699;
   --gris: #c0c0c0;
@@ -429,48 +429,85 @@ form select:invalid {
 #servicios{
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  width: 60%;
-  row-gap: 2rem;
-  padding: 5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
+  width: 80%;
+  row-gap: 2rem;
+  padding: 4rem;
 }
 
+
+.card1 {
+  background: linear-gradient(rgba(5, 7, 12, 0.50), rgb(255, 102, 0, 0.35)), url(../img/servicios_img/impresion.webp);
+}
+
+.card2 {
+  background: linear-gradient(rgba(5, 7, 12, 0.50), rgb(255, 102, 0, 0.35)), url(../img/servicios_img/diseno.webp);
+}
+
+.card3 {
+  background: linear-gradient(rgba(5, 7, 12, 0.50), rgb(255, 102, 0, 0.35)), url(../img/servicios_img/tecnico.webp);
+}
+
+.card4 {
+  background: linear-gradient(rgba(5, 7, 12, 0.50), rgb(255, 102, 0, 0.35)), url(../img/servicios_img/formacion.webp);
+}
+
+
 #seccion_servicios{
+  display: grid;
+  align-items: center;
+  gap: 1.6rem;
   cursor: pointer;
   border: 0.4em solid var(--naranja);
-  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  background-size: cover;
+  color: var(--blanco);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
 }
 
 #seccion_servicios a img{
-  max-width: 60em;
-  border: 0.8em solid var(--naranja);
-  outline: 0.6em solid var(--claro);
-  margin: 2em;
-  float: left;
+  width: 100%;
+  border-radius: 2%;
+  border: 0.6em solid var(--blanco);
+  box-sizing: border-box;
 }
-#seccion_servicios h2{
-  padding: 1em;
-  color: var(--naranja);
 
+#seccion_servicios p {
+  grid-row: 2;
+  grid-column: 2/3;
+  font-size: 1.7rem;
+  line-height: 1.4;
+  
 }
-#seccion_servicios p{
-  color: var(--oscuro);
-  margin: 1em;
-} 
 
-@media screen and (max-width: 480px) {
-  #seccion_servicios {
-    display: grid;
-    justify-items: center;
-    align-items: center;
+#seccion_servicios h2 {
+  grid-row: 1;
+  grid-column: 1/3;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  #seccion_servicios{
+    padding: 1.4rem;
+  }
+  
+
+  #seccion_servicios h2 {
+    grid-row: 1;
+    grid-column: 1;
   }
 
-  #seccion_servicios a img {
-    max-width: 40em;
-    border: 0.4em solid var(--naranja);
-    outline: 0.3em solid var(--claro);
+  #seccion_servicios a img{
+    grid-row: 2;
+    grid-column: 1;
+  }
+  
+  #seccion_servicios p {
+    grid-row: 3;
+    grid-column: 1;
   }
 }
 
-/* ---- FIN SERVICIOS ---- */
