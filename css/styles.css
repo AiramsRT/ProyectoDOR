@@ -344,7 +344,7 @@ figure.user_card .profile {
   }
 
   figure.user_card blockquote {
-    font-size: 1em;   
+    font-size: 1em;
     margin-top: 8px;
   }
 }
@@ -354,11 +354,16 @@ figure.user_card .profile {
 form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 40%;
   margin: 0 auto;
   padding: 3.5em 0;
   font-size: var(--tamaño_p);
   align-items: center;
+  line-height: 4rem;
+}
+
+#contacto_txt {
+  line-height: 2rem;
 }
 
 form h1 {
@@ -369,21 +374,21 @@ form label {
   margin-top: 3%;
   margin-bottom: 1%;
   height: 5%;
-  width: 50%;
+  width: 60%;
 }
 
 form input,
 #textarea {
   border: 1px solid var(--naranja);
   height: 5%;
-  width: 50%;
+  width: 60%;
   border-radius: 0.3em;
   box-shadow: 0em 0.2em 0.5em rgba(0, 0, 0, 0.5);
   padding: 0.2em;
 }
 
 form select {
-  width: 50%;
+  width: 60%;
   border: 1px solid var(--naranja);
   border-radius: 0.3em;
 }
@@ -417,10 +422,18 @@ form select:invalid {
   border: 0.2em solid var(--naranja);
 }
 
+#contacto_disclaimer > p {
+  font-size: 1.2rem;
+  margin-top: .5rem;
+  line-height: 2rem;
+  font-style: italic;
+}
+
 @media screen and (max-width: 768px) {
   form {
-    width: 50%;
+    width: 80%;
     align-items: center;
+    padding: 2.5em 0;
   }
 
   form label,
@@ -439,7 +452,8 @@ form select:invalid {
   }
 
   form {
-    width: 80%;
+    width: 90%;
+    padding: 1.5em 0;
     align-items: flex-start;
     align-items: center;
   }
@@ -543,7 +557,6 @@ form select:invalid {
   padding: 4rem;
 }
 
-
 .card1 {
   background: linear-gradient(rgba(5, 7, 12, 0.50), rgb(255, 102, 0, 0.35)), url(../img/servicios_img/impresion.webp);
 }
@@ -559,7 +572,6 @@ form select:invalid {
 .card4 {
   background: linear-gradient(rgba(5, 7, 12, 0.50), rgb(255, 102, 0, 0.35)), url(../img/servicios_img/formacion.webp);
 }
-
 
 #seccion_servicios {
   display: grid;
