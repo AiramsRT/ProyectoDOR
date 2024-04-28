@@ -363,8 +363,9 @@ form {
   line-height: 4rem;
 }
 
-#contacto_txt {
-  line-height: 2rem;
+#contacto_txt,
+#presupuesto_txt {
+  line-height: 2.8rem;
 }
 
 form h1 {
@@ -423,10 +424,11 @@ form select:invalid {
   border: 0.2em solid var(--naranja);
 }
 
-#contacto_disclaimer>p {
+#contacto_disclaimer > p,
+#presupuesto_disclaimer > p {
   font-size: 1.2rem;
   margin-top: .5rem;
-  line-height: 2rem;
+  line-height: 2.3rem;
   font-style: italic;
 }
 
@@ -553,9 +555,9 @@ form select:invalid {
   flex-direction: column;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   margin: 0 auto;
-  width: 80%;
+  width: 60%;
   row-gap: 2rem;
-  padding: 7rem;
+  padding: 3rem 10rem;
 }
 
 .card1 {
@@ -588,6 +590,7 @@ form select:invalid {
 }
 
 #seccion_servicios a img {
+  display: flex;
   width: 100%;
   border-radius: 2%;
   border: 0.6em solid var(--blanco);
@@ -611,7 +614,9 @@ form select:invalid {
 @media screen and (max-width: 768px) {
 
   #servicios {
-    padding: 3rem;
+    width: 70%;
+    row-gap: 2rem;
+    padding: 2rem 7rem;
   }
 
   #seccion_servicios {
@@ -632,5 +637,14 @@ form select:invalid {
   #seccion_servicios p {
     grid-row: 3;
     grid-column: 1;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  #servicios {
+    width: 80%;
+    row-gap: 2rem;
+    padding: 1rem 3rem;
   }
 }
