@@ -422,7 +422,7 @@ form select:invalid {
   border: 0.2em solid var(--naranja);
 }
 
-#contacto_disclaimer > p {
+#contacto_disclaimer>p {
   font-size: 1.2rem;
   margin-top: .5rem;
   line-height: 2rem;
