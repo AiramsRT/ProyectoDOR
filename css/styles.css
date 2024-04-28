@@ -409,3 +409,50 @@ form select:invalid {
   background-repeat: no-repeat;
   color: white;
 }
+
+
+/* ---- SERVICIOS ---- */
+
+#servicios{
+  display: grid;
+  grid-template-columns: 100%; 
+  grid-gap: 10px;
+  width: 100%;
+}
+
+#seccion_servicios{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#seccion_servicios a img{
+  max-width: 60em;
+  border: 0.8em solid var(--naranja);
+  outline: 0.6em solid var(--claro);
+  margin: 2em;
+  float: left;
+}
+#seccion_servicios h2{
+  padding: 1em;
+  color: var(--naranja);
+
+}
+#seccion_servicios p{
+  color: var(--oscuro);
+  margin: 1em;
+} 
+
+@media screen and (max-width: 480px) {
+  #seccion_servicios {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+  #seccion_servicios a img {
+    max-width: 40em;
+    border: 0.4em solid var(--naranja);
+    outline: 0.3em solid var(--claro);
+  }
+}
+
+/* ---- FIN SERVICIOS ---- */
