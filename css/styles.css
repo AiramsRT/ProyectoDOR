@@ -244,6 +244,9 @@ h5 {
   width: 80%;
   margin: 0 auto;
   padding: 1rem;
+  color: coral;
+  text-align: center;
+  -webkit-text-stroke: thick;
 }
 
 #nosotros_landing_card p {
@@ -630,12 +633,13 @@ form select:invalid {
   grid-column: 2/3;
   font-size: 1.7rem;
   line-height: 1.4;
-
+  color: cornsilk;
 }
 
 #seccion_servicios h2 {
   grid-row: 1;
   grid-column: 1/3;
+  color: coral;
 }
 
 
