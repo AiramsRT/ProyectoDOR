@@ -8,13 +8,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>innovArte3D</title>
 </head>
 
 <body>
     <header id="menu">
-        <a href="index.html"><img id="logo" src="img/logo.webp" alt="logo" onerror="this.src='img/logo.jpg';"></a>
+        <a href="index.html"><img id="logo" src="img/logo.webp" alt="logo" onerror="this.src='../img/logo.jpg';"></a>
+
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
         <nav id="navegacion">
             <ul>
                 <li><a href="./index.html">Inicio</a></li>

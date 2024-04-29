@@ -61,7 +61,8 @@ h5 {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   text-align: center;
   font-weight: bold;
   padding: 2rem;
@@ -133,26 +134,47 @@ h4 {
   }
 }
 
-@media screen and (max-width: 480px) {
-  #navegacion ul li {
-    margin-left: 0;
-    padding: 0.3rem;
-  }
+/* Menú de hamburguesa */
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
 
-  #navegacion ul li a {
-    font-size: 1.3rem;
+#menu-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .menu-icon {
+    display: contents;
+    position: absolute;
+    right: 50%;
+    top: 6rem;
+    transform: translateX(-50%);
   }
 
   #navegacion ul {
+    display: none;
     flex-direction: column;
     text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    background-color: var(--blanco);
   }
 
-  #logo {
-    max-width: 25rem;
-    padding: 1rem;
+  #navegacion ul li {
+    margin: 0;
+    padding: 0.8rem;
+  }
+
+  #menu-toggle:checked+.menu-icon+#navegacion ul {
+    display: flex;
   }
 }
+
 
 /* Footer */
 #footer {
@@ -350,6 +372,8 @@ figure.user_card .profile {
   }
 }
 
+/* *** *** C O N T A C T O    Y    P R E S U P U E S T O *** *** */
+
 /* FORMULARIOS */
 
 form {
@@ -424,8 +448,8 @@ form select:invalid {
   border: 0.2em solid var(--naranja);
 }
 
-#contacto_disclaimer > p,
-#presupuesto_disclaimer > p {
+#contacto_disclaimer>p,
+#presupuesto_disclaimer>p {
   font-size: 1.2rem;
   margin-top: .5rem;
   line-height: 2.3rem;
@@ -514,6 +538,10 @@ form select:invalid {
 
   #portfolio {
     height: 100%;
+  }
+
+  #portfolio_imagen {
+    height: 580px;
   }
 
   .no_mq {
