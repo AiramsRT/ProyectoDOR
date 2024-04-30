@@ -178,6 +178,9 @@ h5 {
 
 /* Footer */
 #footer {
+  border-top: 1rem solid;
+  border-color: var(--gris);
+  box-shadow: 3px 3px 5px 6px #ccc;
   background-color: var(--claro);
   color: var(--blanco);
   width: 100%;
@@ -185,7 +188,6 @@ h5 {
 
 #elementos {
   display: flex;
-  width: 100%;
   padding: 2rem;
   justify-content: space-around;
   align-items: center;
