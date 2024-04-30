@@ -218,6 +218,10 @@ h5 {
   width: auto;
 }
 
+#derechos_reservados{
+  text-align: center;
+  padding-bottom: 2rem;
+}
 
 /* *** *** L A N D I N G *** *** */
 
@@ -586,7 +590,7 @@ form select:invalid {
 #servicios {
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
   width: 60%;
   row-gap: 2rem;
@@ -615,11 +619,11 @@ form select:invalid {
   gap: 1.6rem;
   cursor: pointer;
   border: 0.4em solid var(--naranja);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
   padding: 2rem;
   background-size: cover;
   color: var(--blanco);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
 }
 
 #seccion_servicios a img {
@@ -681,4 +685,32 @@ form select:invalid {
     row-gap: 2rem;
     padding: 1rem 3rem;
   }
+}
+
+/* ---- POLITICAS ---- */
+
+#politicas {
+  box-sizing: content-box;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 20px;
+  padding: 4rem;
+  border-radius: 5px;
+}
+
+.titulo_politicas, .fecha_actualizacion {
+  color: var(--oscuro);
+  text-align: center;
+}
+
+.titulo_seccion {
+  color: #005a9c;
+}
+
+.descripcion_seccion, .introduccion {
+  margin-top: 0;
+  line-height: 1.6;
+  padding: 2rem;
+  background-color: white;
+  border-left: 4px solid #005a9c;
 }
