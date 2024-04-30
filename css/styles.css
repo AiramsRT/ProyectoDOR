@@ -136,9 +136,10 @@ h5 {
 
 /* Menú de hamburguesa */
 .menu-icon {
-  display: none;
+  display: none; 
   font-size: 2rem;
-  cursor: pointer;
+  position: absolute;
+
 }
 
 #menu-toggle {
@@ -147,31 +148,32 @@ h5 {
 
 @media screen and (max-width: 480px) {
   .menu-icon {
-    display: contents;
-    position: absolute;
-    right: 50%;
-    top: 6rem;
-    transform: translateX(-50%);
+      display: contents; /* Muestra el icono en pantallas pequeñas */
+  }
+
+  nav#navegacion{
+    padding: 0;
   }
 
   #navegacion ul {
-    display: none;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    top: 8rem;
-    left: 0;
-    background-color: var(--blanco);
+      display: none;
+      flex-direction: column;
+      text-align: center;
+      width: 100%; /* Cambio para que el menú use todo el ancho disponible */
+      position: relative;
+      left: 0; /* Asegura que el menú comience desde el borde izquierdo */
+      background-color: var(--blanco);
+      border-radius: 0 0 10px 10px; /* Redondea los bordes inferiores */
   }
 
   #navegacion ul li {
-    margin: 0;
-    padding: 0.8rem;
+      margin: 0;
+      padding: 10px; /* Aumenta el padding para un mejor toque en pantallas táctiles */
+      border-bottom: 1px solid #ccc; /* Opcional: añade separador entre elementos */
   }
 
-  #menu-toggle:checked+.menu-icon+#navegacion ul {
-    display: flex;
+  #menu-toggle:checked + .menu-icon + #navegacion ul {
+      display: flex; /* Se muestra cuando menu-toggle está marcado */
   }
 }
 
