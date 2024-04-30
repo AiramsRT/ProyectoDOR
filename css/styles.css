@@ -148,7 +148,7 @@ h5 {
 
 @media screen and (max-width: 480px) {
   .menu-icon {
-      display: contents; /* Muestra el icono en pantallas pequeñas */
+      display: contents;
   }
 
   nav#navegacion{
@@ -159,24 +159,19 @@ h5 {
       display: none;
       flex-direction: column;
       text-align: center;
-      width: 100%; /* Cambio para que el menú use todo el ancho disponible */
-      position: relative;
-      left: 0; /* Asegura que el menú comience desde el borde izquierdo */
       background-color: var(--blanco);
-      border-radius: 0 0 10px 10px; /* Redondea los bordes inferiores */
   }
 
   #navegacion ul li {
       margin: 0;
-      padding: 10px; /* Aumenta el padding para un mejor toque en pantallas táctiles */
-      border-bottom: 1px solid #ccc; /* Opcional: añade separador entre elementos */
+      padding: 10px; 
+      border-bottom: 1px solid #ccc; 
   }
 
   #menu-toggle:checked + .menu-icon + #navegacion ul {
-      display: flex; /* Se muestra cuando menu-toggle está marcado */
+      display: flex;
   }
 }
-
 
 /* Footer */
 #footer {
