@@ -136,7 +136,7 @@ h5 {
 
 /* Menú de hamburguesa */
 .menu-icon {
-  display: none; 
+  display: none;
   font-size: 2rem;
   position: absolute;
 
@@ -148,28 +148,28 @@ h5 {
 
 @media screen and (max-width: 480px) {
   .menu-icon {
-      display: contents;
+    display: contents;
   }
 
-  nav#navegacion{
+  nav#navegacion {
     padding: 0;
   }
 
   #navegacion ul {
-      display: none;
-      flex-direction: column;
-      text-align: center;
-      background-color: var(--blanco);
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--blanco);
   }
 
   #navegacion ul li {
-      margin: 0;
-      padding: 10px; 
-      border-bottom: 1px solid #ccc; 
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
   }
 
-  #menu-toggle:checked + .menu-icon + #navegacion ul {
-      display: flex;
+  #menu-toggle:checked+.menu-icon+#navegacion ul {
+    display: flex;
   }
 }
 
@@ -215,7 +215,7 @@ h5 {
   width: auto;
 }
 
-#derechos_reservados{
+#derechos_reservados {
   text-align: center;
   padding-bottom: 2rem;
 }
@@ -690,12 +690,13 @@ form select:invalid {
   box-sizing: content-box;
   background-color: #f9f9f9;
   color: #333;
-  margin: 20px;
-  padding: 4rem;
+  margin: 5rem;
+  padding: 4rem 25rem;
   border-radius: 5px;
 }
 
-.titulo_politicas, .fecha_actualizacion {
+.titulo_politicas,
+.fecha_actualizacion {
   color: var(--oscuro);
   text-align: center;
 }
@@ -704,10 +705,26 @@ form select:invalid {
   color: #005a9c;
 }
 
-.descripcion_seccion, .introduccion {
+.descripcion_seccion,
+.introduccion {
   margin-top: 0;
   line-height: 1.6;
   padding: 2rem;
   background-color: white;
   border-left: 4px solid #005a9c;
+}
+
+
+@media screen and (max-width: 768px) {
+  #politicas {
+    margin: 2rem;
+    padding: 2rem 8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #politicas {
+    margin: 1rem;
+    padding: 1rem 3rem;
+  }
 }
