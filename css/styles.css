@@ -30,7 +30,6 @@ body {
   border: 0;
   list-style: none;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  text-align: justify;
 }
 
 /* Tipografía */
@@ -90,6 +89,12 @@ h5 {
 #video_landing video,
 #seccion_servicios a img {
   width: 100%;
+}
+
+#nosotros_landing_card,
+#contacto_disclaimer,
+#presupuesto_disclaimer {
+  text-align: justify;
 }
 
 /* Menú de navegación */
@@ -254,7 +259,6 @@ h5 {
   margin: 0 auto;
   padding: 1rem;
   color: coral;
-  text-align: center;
   -webkit-text-stroke: thick;
 }
 
@@ -404,6 +408,7 @@ form {
 #contacto_txt,
 #presupuesto_txt {
   line-height: 2.8rem;
+  text-align: justify;
 }
 
 form h1 {
