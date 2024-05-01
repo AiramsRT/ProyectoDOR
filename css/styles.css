@@ -58,7 +58,6 @@ h5 {
   font-size: var(--tamaño_H5);
 }
 
-
 h1,
 h2,
 h3,
@@ -322,7 +321,6 @@ figure.user_card {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 
 figure.user_card h2 {
   color: var(--blanco);
@@ -600,7 +598,6 @@ form select:invalid {
   color: white;
 }
 
-
 /* ---- SERVICIOS ---- */
 #servicios {
   display: flex;
@@ -682,7 +679,6 @@ form select:invalid {
   color: coral;
 }
 
-
 @media screen and (max-width: 768px) {
 
   #servicios {
@@ -694,7 +690,6 @@ form select:invalid {
   #seccion_servicios {
     padding: 1.4rem;
   }
-
 
   #seccion_servicios h2 {
     grid-row: 1;
@@ -751,7 +746,6 @@ form select:invalid {
   background-color: white;
   border-left: 4px solid #005a9c;
 }
-
 
 @media screen and (max-width: 768px) {
   #politicas {
