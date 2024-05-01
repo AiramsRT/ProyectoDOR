@@ -28,6 +28,8 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
+  list-style: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   text-align: justify;
 }
 
