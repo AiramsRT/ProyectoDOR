@@ -566,20 +566,20 @@ form select:invalid {
 
 /* Backgrounds de contenidos*/
 .presupuesto_bg {
-  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/back_presupuesto.jpg);
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/back_presupuesto.webp), url(../img/back_presupuesto.jpg);
 }
 
 .contacto_bg {
-  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/contacto_bg.webp);
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/contacto_bg.webp), url(../img/contacto_bg.jpg);
 }
 
 .nosotros_bg {
-  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/nosotros.webp);
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/nosotros.webp), url(../img/nosotros.jpg);
   background-position-y: center;
 }
 
 .portfolio_bg {
-  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/back_portfolio.webp);
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/back_portfolio.webp), url(../img/back_portfolio.jpg);
 }
 
 .presupuesto_bg,
