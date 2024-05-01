@@ -647,7 +647,7 @@ form select:invalid {
 }
 
 #seccion_servicios:hover {
-  border: 0.6em solid var(--claro);
+  border: 0.4em solid var(--claro);
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.7);
 }
 
