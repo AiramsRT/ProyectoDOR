@@ -574,7 +574,7 @@ form select:invalid {
 }
 
 /* Backgrounds de contenidos*/
-.presupuesto {
+.presupuesto_bg {
   background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/back_presupuesto.jpg);
 }
 
@@ -591,7 +591,7 @@ form select:invalid {
   background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/back_portfolio.webp);
 }
 
-.presupuesto,
+.presupuesto_bg,
 .contacto_bg,
 .nosotros_bg,
 .portfolio_bg {
