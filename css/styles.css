@@ -20,6 +20,7 @@ body {
   font-family: "Montserrat", sans-serif;
   width: 100%;
   height: auto;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 *,
@@ -239,7 +240,6 @@ h5 {
   grid-template-columns: 1fr 1fr;
   box-sizing: border-box;
   padding: 5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 #nosotros_landing_card {
@@ -345,18 +345,22 @@ figure.user_card .profile {
 
 @media screen and (max-width: 768px) {
   #customer_experience {
-    padding: 1rem;
+    padding: .5rem;
+  }
+
+  figure.user_card h2 {
+    padding: .5em;
   }
 
   figure.user_card {
-    margin: 1rem;
+    margin: .5rem;
     width: 30%;
     font-size: 1.2rem;
   }
 
   figure.user_card blockquote {
     padding: 4rem 1rem 3rem 2rem;
-    margin-top: 8px;
+    margin-top: .5em;
   }
 }
 
@@ -620,7 +624,6 @@ form select:invalid {
   padding: 2rem;
   background-size: cover;
   color: var(--blanco);
-  text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
 }
 
 #seccion_servicios a img {
@@ -699,6 +702,7 @@ form select:invalid {
 .fecha_actualizacion {
   color: var(--oscuro);
   text-align: center;
+  padding: 1rem;
 }
 
 .titulo_seccion {
