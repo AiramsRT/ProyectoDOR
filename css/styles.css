@@ -623,6 +623,16 @@ form select:invalid {
   background: linear-gradient(rgba(5, 7, 12, 0.50), rgb(255, 102, 0, 0.35)), url(../img/servicios_img/formacion.webp);
 }
 
+.card1:hover {
+  background: linear-gradient(rgba(5, 7, 12, 0.50), rgba(5, 7, 12, 0.35)), url(../img/servicios_img/impresion.webp);
+} .card2:hover{
+  background: linear-gradient(rgba(5, 7, 12, 0.50), rgb(5, 7, 12, 0.35)), url(../img/servicios_img/diseno.webp);
+} .card3:hover{
+  background: linear-gradient(rgba(5, 7, 12, 0.50), rgb(5, 7, 12, 0.35)), url(../img/servicios_img/tecnico.webp);
+} .card4:hover{
+  background: linear-gradient(rgba(5, 7, 12, 0.50), rgb(5, 7, 12, 0.35)), url(../img/servicios_img/formacion.webp);
+}
+
 #seccion_servicios {
   display: grid;
   align-items: center;
