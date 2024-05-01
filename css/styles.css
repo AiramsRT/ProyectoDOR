@@ -625,11 +625,17 @@ form select:invalid {
 
 .card1:hover {
   background: linear-gradient(rgba(5, 7, 12, 0.50), rgba(5, 7, 12, 0.35)), url(../img/servicios_img/impresion.webp);
-} .card2:hover{
+}
+
+.card2:hover {
   background: linear-gradient(rgba(5, 7, 12, 0.50), rgb(5, 7, 12, 0.35)), url(../img/servicios_img/diseno.webp);
-} .card3:hover{
+}
+
+.card3:hover {
   background: linear-gradient(rgba(5, 7, 12, 0.50), rgb(5, 7, 12, 0.35)), url(../img/servicios_img/tecnico.webp);
-} .card4:hover{
+}
+
+.card4:hover {
   background: linear-gradient(rgba(5, 7, 12, 0.50), rgb(5, 7, 12, 0.35)), url(../img/servicios_img/formacion.webp);
 }
 
@@ -643,6 +649,11 @@ form select:invalid {
   padding: 2rem;
   background-size: cover;
   color: var(--blanco);
+}
+
+#seccion_servicios:hover {
+  border: 0.6em solid var(--claro); 
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.7);
 }
 
 #seccion_servicios a img {
