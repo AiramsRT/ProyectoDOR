@@ -1,6 +1,6 @@
 :root {
   --blanco: #e6e6e6;
-  --naranja: rgb(255, 102, 0);
+  --naranja: #ff6600;
   --oscuro: #003366;
   --claro: #336699;
   --gris: #c0c0c0;
@@ -25,11 +25,9 @@ body {
 *,
 *:before,
 *:after {
-  list-style: none;
   margin: 0;
   padding: 0;
   border: 0;
-  text-align: justify;
 }
 
 /* Tipografía */
@@ -82,6 +80,13 @@ h5 {
   flex-direction: column;
   justify-content: center;
   height: 100%;
+}
+
+#footer,
+#banner_img,
+#video_landing video,
+#seccion_servicios a img {
+  width: 100%;
 }
 
 /* Menú de navegación */
@@ -138,8 +143,9 @@ h5 {
 /* Menú de hamburguesa */
 .menu-icon {
   display: none;
-  font-size: 2rem;
-  cursor: pointer;
+  font-size: var(--tamaño_H2);
+  position: absolute;
+
 }
 
 #menu-toggle {
@@ -149,26 +155,23 @@ h5 {
 @media screen and (max-width: 480px) {
   .menu-icon {
     display: contents;
-    position: absolute;
-    right: 50%;
-    top: 6rem;
-    transform: translateX(-50%);
+  }
+
+  nav#navegacion {
+    padding: 0;
   }
 
   #navegacion ul {
     display: none;
     flex-direction: column;
     text-align: center;
-    width: 100%;
-    position: absolute;
-    top: 8rem;
-    left: 0;
     background-color: var(--blanco);
   }
 
   #navegacion ul li {
     margin: 0;
-    padding: 0.8rem;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
   }
 
   #menu-toggle:checked+.menu-icon+#navegacion ul {
@@ -176,17 +179,17 @@ h5 {
   }
 }
 
-
 /* Footer */
 #footer {
+  border-top: 1rem solid;
+  border-color: var(--gris);
+  box-shadow: 3px 3px 5px 6px #ccc;
   background-color: var(--claro);
   color: var(--blanco);
-  width: 100%;
 }
 
 #elementos {
   display: flex;
-  width: 100%;
   padding: 2rem;
   justify-content: space-around;
   align-items: center;
@@ -217,6 +220,10 @@ h5 {
   width: auto;
 }
 
+#derechos_reservados {
+  text-align: center;
+  padding-bottom: 2rem;
+}
 
 /* *** *** L A N D I N G *** *** */
 
@@ -226,7 +233,6 @@ h5 {
   border-top: 1rem solid;
   border-bottom: 1rem solid;
   border-color: var(--gris);
-  width: 100%;
   box-shadow: 3px 3px 5px 6px #ccc;
 }
 
@@ -237,7 +243,6 @@ h5 {
   grid-template-columns: 1fr 1fr;
   box-sizing: border-box;
   padding: 5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 #nosotros_landing_card {
@@ -264,7 +269,6 @@ h5 {
 #video_landing video {
   grid-row: 1;
   grid-column: 2/3;
-  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -313,7 +317,7 @@ figure.user_card h2 {
 }
 
 figure.user_card blockquote {
-  font-size: 1em;
+  font-size: var(--tamaño_p);
   padding: 45px 20px 40px 50px;
   margin-top: 30px;
   background-color: #ffffff;
@@ -326,35 +330,39 @@ figure.user_card blockquote {
 figure.user_card blockquote:before {
   content: "\201C";
   position: absolute;
-  font-size: 70px;
+  font-size: 7rem;
   opacity: 0.25;
   top: 0px;
   left: 20px;
 }
 
 figure.user_card .profile {
-  width: 100px;
+  width: 10rem;
   border-radius: 50%;
   display: inline-block;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   border: solid 5px var(--naranja);
 }
 
 @media screen and (max-width: 768px) {
   #customer_experience {
-    padding: 1rem;
+    padding: .5rem;
+  }
+
+  figure.user_card h2 {
+    padding: .5em;
   }
 
   figure.user_card {
-    margin: 1rem;
+    margin: .5rem;
     width: 30%;
-    font-size: 1.2rem;
+    font-size: var(--tamaño_H5);
   }
 
   figure.user_card blockquote {
     padding: 4rem 1rem 3rem 2rem;
-    margin-top: 8px;
+    margin-top: .5em;
   }
 }
 
@@ -367,11 +375,10 @@ figure.user_card .profile {
   figure.user_card {
     margin: 1.2rem;
     width: 95%;
-    font-size: 1.2rem;
   }
 
   figure.user_card blockquote {
-    font-size: 1em;
+    font-size: var(--tamaño_H5);
     margin-top: 8px;
   }
 }
@@ -454,7 +461,7 @@ form select:invalid {
 
 #contacto_disclaimer>p,
 #presupuesto_disclaimer>p {
-  font-size: 1.2rem;
+  font-size: var(--tamaño_H5);
   margin-top: .5rem;
   line-height: 2.3rem;
   font-style: italic;
@@ -585,7 +592,7 @@ form select:invalid {
 #servicios {
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
   width: 60%;
   row-gap: 2rem;
@@ -614,16 +621,14 @@ form select:invalid {
   gap: 1.6rem;
   cursor: pointer;
   border: 0.4em solid var(--naranja);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
   padding: 2rem;
   background-size: cover;
   color: var(--blanco);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 #seccion_servicios a img {
   display: flex;
-  width: 100%;
   border-radius: 2%;
   border: 0.6em solid var(--blanco);
   box-sizing: border-box;
@@ -632,7 +637,7 @@ form select:invalid {
 #seccion_servicios p {
   grid-row: 2;
   grid-column: 2/3;
-  font-size: 1.7rem;
+  font-size: var(--tamaño_p);
   line-height: 1.4;
   color: cornsilk;
 }
@@ -678,6 +683,52 @@ form select:invalid {
   #servicios {
     width: 80%;
     row-gap: 2rem;
+    padding: 1rem 3rem;
+  }
+}
+
+/* ---- POLITICAS ---- */
+
+#politicas {
+  box-sizing: content-box;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 5rem;
+  padding: 4rem 25rem;
+  border-radius: 5px;
+}
+
+.titulo_politicas,
+.fecha_actualizacion {
+  color: var(--oscuro);
+  text-align: center;
+  padding: 1rem;
+}
+
+.titulo_seccion {
+  color: #005a9c;
+}
+
+.descripcion_seccion,
+.introduccion {
+  margin-top: 0;
+  line-height: 1.6;
+  padding: 2rem;
+  background-color: white;
+  border-left: 4px solid #005a9c;
+}
+
+
+@media screen and (max-width: 768px) {
+  #politicas {
+    margin: 2rem;
+    padding: 2rem 8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #politicas {
+    margin: 1rem;
     padding: 1rem 3rem;
   }
 }
