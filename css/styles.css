@@ -131,7 +131,6 @@ h5 {
   text-transform: uppercase;
     &:hover {
       color: var(--naranja);
-      text-decoration: 0.1rem underline var(--gris);
     }
 }
 
