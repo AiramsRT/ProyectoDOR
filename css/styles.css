@@ -129,11 +129,10 @@ h5 {
   font-size: var(--tamaño_H4);
   font-weight: bold;
   text-transform: uppercase;
-}
-
-#navegacion ul li a:hover {
-  color: var(--naranja);
-  text-decoration: 0.3rem underline var(--gris);
+    &:hover {
+      color: var(--naranja);
+      text-decoration: 0.3rem underline var(--gris);
+    }
 }
 
 /* Tablet */
@@ -182,7 +181,7 @@ h5 {
     border-bottom: 1px solid #ccc;
   }
 
-  #menu-toggle:checked+.menu-icon+#navegacion ul {
+  #menu-toggle:checked + .menu-icon + #navegacion ul {
     display: flex;
   }
 }
@@ -265,7 +264,7 @@ h5 {
 
 #nosotros_landing_card p {
   line-height: 1.4;
-  padding: .6rem;
+  padding: 0.6rem;
 }
 
 #video_landing {
@@ -314,7 +313,11 @@ figure.user_card {
   padding: 3rem;
   border-radius: 1%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-  background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+  background-image: linear-gradient(
+    -25deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -354,22 +357,22 @@ figure.user_card .profile {
 
 @media screen and (max-width: 768px) {
   #customer_experience {
-    padding: .5rem;
+    padding: 0.5rem;
   }
 
   figure.user_card h2 {
-    padding: .5em;
+    padding: 0.5em;
   }
 
   figure.user_card {
-    margin: .5rem;
+    margin: 0.5rem;
     width: 30%;
     font-size: var(--tamaño_H5);
   }
 
   figure.user_card blockquote {
     padding: 4rem 1rem 3rem 2rem;
-    margin-top: .5em;
+    margin-top: 0.5em;
   }
 }
 
@@ -465,10 +468,10 @@ form select:invalid {
   border: 0.2em solid var(--naranja);
 }
 
-#contacto_disclaimer>p,
-#presupuesto_disclaimer>p {
+#contacto_disclaimer > p,
+#presupuesto_disclaimer > p {
   font-size: var(--tamaño_H5);
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   line-height: 2.3rem;
   font-style: italic;
 }
@@ -489,7 +492,6 @@ form select:invalid {
 }
 
 @media screen and (max-width: 480px) {
-
   #presupuesto_s1 h1,
   #contacto_s1 h1 {
     font-size: var(--tamaño_H2);
@@ -542,15 +544,13 @@ form select:invalid {
   flex-grow: 1;
   object-fit: cover;
   transition: flex 0.4s;
-}
-
-#portfolio_imagen:hover {
-  flex-grow: 2;
+  &:hover{
+    flex-grow: 2;
+  }
 }
 
 /* Media Query para mostrar 3 imagenes del portfolio en version movil*/
 @media screen and (max-width: 480px) {
-
   #portfolio {
     height: 100%;
   }
@@ -566,20 +566,24 @@ form select:invalid {
 
 /* Backgrounds de contenidos*/
 .presupuesto_bg {
-  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/back_presupuesto.webp), url(../img/back_presupuesto.jpg);
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+    url(../img/back_presupuesto.webp), url(../img/back_presupuesto.jpg);
 }
 
 .contacto_bg {
-  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/contacto_bg.webp), url(../img/contacto_bg.jpg);
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+    url(../img/contacto_bg.webp), url(../img/contacto_bg.jpg);
 }
 
 .nosotros_bg {
-  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/nosotros.webp), url(../img/nosotros.jpg);
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+    url(../img/nosotros.webp), url(../img/nosotros.jpg);
   background-position-y: center;
 }
 
 .portfolio_bg {
-  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/back_portfolio.webp), url(../img/back_portfolio.jpg);
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+    url(../img/back_portfolio.webp), url(../img/back_portfolio.jpg);
 }
 
 .presupuesto_bg,
@@ -603,30 +607,38 @@ form select:invalid {
 }
 
 .card1 {
-  background: linear-gradient(rgba(5, 7, 12, 0.50), rgb(255, 102, 0, 0.35)), url(../img/servicios_img/impresion.webp);
+  background: linear-gradient(rgba(5, 7, 12, 0.5), rgb(255, 102, 0, 0.35)),
+    url(../img/servicios_img/impresion.webp);
   &:hover {
-    background: linear-gradient(rgba(5, 7, 12, 0.50), rgba(5, 7, 12, 0.35)), url(../img/servicios_img/impresion.webp);
+    background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.35)),
+      url(../img/servicios_img/impresion.webp);
   }
 }
 
 .card2 {
-  background: linear-gradient(rgba(5, 7, 12, 0.50), rgb(255, 102, 0, 0.35)), url(../img/servicios_img/diseno.webp);
+  background: linear-gradient(rgba(5, 7, 12, 0.5), rgb(255, 102, 0, 0.35)),
+    url(../img/servicios_img/diseno.webp);
   &:hover {
-    background: linear-gradient(rgba(5, 7, 12, 0.50), rgb(5, 7, 12, 0.35)), url(../img/servicios_img/diseno.webp);
+    background: linear-gradient(rgba(5, 7, 12, 0.5), rgb(5, 7, 12, 0.35)),
+      url(../img/servicios_img/diseno.webp);
   }
 }
 
 .card3 {
-  background: linear-gradient(rgba(5, 7, 12, 0.50), rgb(255, 102, 0, 0.35)), url(../img/servicios_img/tecnico.webp);
+  background: linear-gradient(rgba(5, 7, 12, 0.5), rgb(255, 102, 0, 0.35)),
+    url(../img/servicios_img/tecnico.webp);
   &:hover {
-    background: linear-gradient(rgba(5, 7, 12, 0.50), rgb(5, 7, 12, 0.35)), url(../img/servicios_img/tecnico.webp);
+    background: linear-gradient(rgba(5, 7, 12, 0.5), rgb(5, 7, 12, 0.35)),
+      url(../img/servicios_img/tecnico.webp);
   }
 }
 
 .card4 {
-  background: linear-gradient(rgba(5, 7, 12, 0.50), rgb(255, 102, 0, 0.35)), url(../img/servicios_img/formacion.webp);
+  background: linear-gradient(rgba(5, 7, 12, 0.5), rgb(255, 102, 0, 0.35)),
+    url(../img/servicios_img/formacion.webp);
   &:hover {
-    background: linear-gradient(rgba(5, 7, 12, 0.50), rgb(5, 7, 12, 0.35)), url(../img/servicios_img/formacion.webp);
+    background: linear-gradient(rgba(5, 7, 12, 0.5), rgb(5, 7, 12, 0.35)),
+      url(../img/servicios_img/formacion.webp);
   }
 }
 
@@ -641,11 +653,11 @@ form select:invalid {
   background-size: cover;
   color: var(--blanco);
   transition: 0.5s ease;
-}
-
-#seccion_servicios:hover {
-  border: 0.4em solid var(--claro);
-  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.7);
+  
+  &:hover {
+    border: 0.4em solid var(--claro);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.7);
+  }
 }
 
 #seccion_servicios a img {
@@ -670,7 +682,6 @@ form select:invalid {
 }
 
 @media screen and (max-width: 768px) {
-
   #servicios {
     width: 70%;
     row-gap: 2rem;
@@ -698,7 +709,6 @@ form select:invalid {
 }
 
 @media screen and (max-width: 480px) {
-
   #servicios {
     width: 80%;
     row-gap: 2rem;
