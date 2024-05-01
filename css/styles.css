@@ -75,6 +75,8 @@ h5 {
 #contacto_s1,
 #presupuesto_s1 {
   background-color: var(--claro);
+  position: sticky;
+  top: 9%;
 }
 
 #contenido {
