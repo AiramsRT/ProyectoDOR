@@ -12,7 +12,7 @@
   --tamaño_p: 1.6rem;
 }
 
-/* Globales */
+/* G E N E R A L E S */
 html,
 body {
   font-size: 62.5%;
@@ -32,7 +32,7 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Tipografía */
+/* T I P O G R A F Í A */
 p {
   font-size: var(--tamaño_p);
 }
@@ -68,7 +68,7 @@ h5 {
   padding: 2rem;
 }
 
-/* Estilos comunes secciones */
+/* C O M U N E S */
 #portfolio_s1,
 #servicios_s1,
 #contacto_s1,
@@ -98,7 +98,7 @@ h5 {
   text-align: justify;
 }
 
-/* Menú de navegación */
+/* M E N U   D E   N A V E G A C I Ó N */
 #menu {
   display: flex;
   justify-content: space-around;
@@ -149,12 +149,11 @@ h5 {
   }
 }
 
-/* Menú de hamburguesa */
+/* Menú de hamburguesa (versión móvil)*/
 .menu-icon {
   display: none;
   font-size: var(--tamaño_H2);
   position: absolute;
-
 }
 
 #menu-toggle {
@@ -188,7 +187,7 @@ h5 {
   }
 }
 
-/* Footer */
+/* F O O T E R */
 #footer {
   border-top: 1rem solid;
   border-color: var(--gris);
@@ -238,9 +237,7 @@ h5 {
 }
 
 /* *** *** L A N D I N G *** *** */
-
 /* Top banner (landing) */
-
 #banner_img {
   border-top: 1rem solid;
   border-bottom: 1rem solid;
@@ -394,9 +391,7 @@ figure.user_card .profile {
 }
 
 /* *** *** C O N T A C T O    Y    P R E S U P U E S T O *** *** */
-
 /* FORMULARIOS */
-
 form {
   display: flex;
   flex-direction: column;
@@ -533,9 +528,7 @@ form select:invalid {
   border: 1px solid #ff6600;
 }
 
-/* FIN FORMULARIOS */
-
-/* PORTFOLIO */
+/* P O R T F O L I O */
 #portfolio {
   display: flex;
   width: 90%;
@@ -598,7 +591,7 @@ form select:invalid {
   color: white;
 }
 
-/* ---- SERVICIOS ---- */
+/* ---- S E R V I C I O S ---- */
 #servicios {
   display: flex;
   flex-direction: column;
@@ -654,7 +647,7 @@ form select:invalid {
 }
 
 #seccion_servicios:hover {
-  border: 0.6em solid var(--claro); 
+  border: 0.6em solid var(--claro);
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.7);
 }
 
@@ -716,7 +709,7 @@ form select:invalid {
   }
 }
 
-/* ---- POLITICAS ---- */
+/* ---- P O L I T I C A S ---- */
 
 #politicas {
   box-sizing: content-box;
