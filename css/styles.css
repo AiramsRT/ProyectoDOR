@@ -261,7 +261,7 @@ h5 {
   margin: 0 auto;
   padding: 1rem;
   color: coral;
-  -webkit-text-stroke: thick;
+  -webkit-text-stroke: thin;
 }
 
 #nosotros_landing_card p {
