@@ -124,7 +124,7 @@ h5 {
 }
 
 #navegacion ul li a {
-  color: var(--claro);
+  color: var(--oscuro);
   text-decoration: none;
   font-size: var(--tamaño_H4);
   font-weight: bold;
