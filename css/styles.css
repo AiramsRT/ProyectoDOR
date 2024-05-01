@@ -210,10 +210,12 @@ h5 {
 
 #elementos section {
   background-color: var(--claro);
+  margin-top: 1rem;
 }
 
 #elementos section p {
   margin: 10px;
+  line-height: 3rem;
 }
 
 #footer a {
@@ -224,6 +226,7 @@ h5 {
 #footer_ico {
   height: 45px;
   width: auto;
+  margin: .6rem;
 }
 
 #derechos_reservados {
