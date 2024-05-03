@@ -460,7 +460,7 @@ form button {
   border: 0.1em solid var(--claro);
   border-radius: 0.5em;
   background-color: var(--naranja);
-  color: #333333;
+  color: var(--blanco);
   font-weight: 900;
 }
 
