@@ -14,14 +14,16 @@
 @font-face {
   font-family: 'Montserrat';
   src: url('../fonts/montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
-  font-weight: 100 900; /* Define los valores de peso disponibles en la fuente variable */
+  font-weight: 100 900;
   font-style: normal;
+  font-display: fallback; /* Utiliza una fuente de respaldo hasta que se cargue completamente la fuente web */
 }
 @font-face {
   font-family: 'Montserrat';
   src: url('../fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
-  font-weight: 100 900; /* Define los valores de peso disponibles en la fuente variable */
-  font-style: italic; /* Estilo itálico */
+  font-weight: 100 900; 
+  font-style: italic;
+  font-display: fallback; /* Utiliza una fuente de respaldo hasta que se cargue completamente la fuente web */
 }
 /* G E N E R A L E S */
 html,
@@ -578,23 +580,23 @@ form select:invalid {
 /* Backgrounds de contenidos*/
 .presupuesto_bg {
   background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
-    url(../img/back_presupuesto.webp), url(../img/back_presupuesto.jpg);
+    url(../img/back_presupuesto.avif), url(../img/back_presupuesto.webp);
 }
 
 .contacto_bg {
   background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
-    url(../img/contacto_bg.webp), url(../img/contacto_bg.jpg);
+    url(../img/contacto_bg.avif), url(../img/contacto_bg.webp);
 }
 
 .nosotros_bg {
   background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
-    url(../img/nosotros.webp), url(../img/nosotros.jpg);
+    url(../img/nosotros.avif), url(../img/nosotros.webp);
   background-position-y: center;
 }
 
 .portfolio_bg {
   background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
-    url(../img/back_portfolio.webp), url(../img/back_portfolio.jpg);
+    url(../img/back_portfolio.avif), url(../img/back_portfolio.webp);
 }
 
 .presupuesto_bg,
@@ -619,36 +621,44 @@ form select:invalid {
 
 .card1 {
   background: linear-gradient(rgba(5, 7, 12, 0.5), rgb(255, 102, 0, 0.35)),
+    url(../img/servicios_img/impresion.avif),
     url(../img/servicios_img/impresion.webp);
   &:hover {
     background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.35)),
+      url(../img/servicios_img/impresion.avif)
       url(../img/servicios_img/impresion.webp);
   }
 }
 
 .card2 {
   background: linear-gradient(rgba(5, 7, 12, 0.5), rgb(255, 102, 0, 0.35)),
+    url(../img/servicios_img/diseno.avif),
     url(../img/servicios_img/diseno.webp);
   &:hover {
     background: linear-gradient(rgba(5, 7, 12, 0.5), rgb(5, 7, 12, 0.35)),
+      url(../img/servicios_img/diseno.avif),
       url(../img/servicios_img/diseno.webp);
   }
 }
 
 .card3 {
   background: linear-gradient(rgba(5, 7, 12, 0.5), rgb(255, 102, 0, 0.35)),
+    url(../img/servicios_img/tecnico.avif),
     url(../img/servicios_img/tecnico.webp);
   &:hover {
     background: linear-gradient(rgba(5, 7, 12, 0.5), rgb(5, 7, 12, 0.35)),
+      url(../img/servicios_img/tecnico.avif),
       url(../img/servicios_img/tecnico.webp);
   }
 }
 
 .card4 {
   background: linear-gradient(rgba(5, 7, 12, 0.5), rgb(255, 102, 0, 0.35)),
+    url(../img/servicios_img/formacion.avif),
     url(../img/servicios_img/formacion.webp);
   &:hover {
     background: linear-gradient(rgba(5, 7, 12, 0.5), rgb(5, 7, 12, 0.35)),
+      url(../img/servicios_img/formacion.avif),
       url(../img/servicios_img/formacion.webp);
   }
 }
