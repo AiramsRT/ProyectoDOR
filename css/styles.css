@@ -461,6 +461,7 @@ form button {
   border-radius: 0.5em;
   background-color: var(--naranja);
   color: var(--blanco);
+  font-weight: 900;
 }
 
 form input:focus,
