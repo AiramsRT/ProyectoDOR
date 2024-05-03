@@ -11,7 +11,18 @@
   --tamaño_H5: 1.2rem;
   --tamaño_p: 1.6rem;
 }
-
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900; /* Define los valores de peso disponibles en la fuente variable */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900; /* Define los valores de peso disponibles en la fuente variable */
+  font-style: italic; /* Estilo itálico */
+}
 /* G E N E R A L E S */
 html,
 body {
@@ -33,6 +44,7 @@ body {
 }
 
 /* T I P O G R A F Í A */
+
 p {
   font-size: var(--tamaño_p);
 }
