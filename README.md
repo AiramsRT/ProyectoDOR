@@ -11,6 +11,7 @@
 -	Se ha comprobado y corregido con herramienta de PageSpeed  las distancias entre objetos en versión Tablet y móvil para una correcta accesibilidad.
 -	Todas las etiquetas html tienen su atributo alt definido con la descripción correspondiente para mejorar la accesibilidad
 -	Totalmente responsivo, con medias querys definidas para 768px y 480px
+-	Los formularios están creados con verificaciones en el propio HTML, en caso de introducir datos correctos el borde del input se colorea en verde.
 -	Hecho con amor.
 
   PD: Este proyecto es FREE DIVS.
