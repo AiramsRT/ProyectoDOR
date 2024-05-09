@@ -12,3 +12,5 @@
 -	Todas las etiquetas html tienen su atributo alt definido con la descripción correspondiente para mejorar la accesibilidad
 -	Totalmente responsivo, con medias querys definidas para 768px y 480px
 -	Hecho con amor.
+
+  PD: Este proyecto es FREE DIVS.
