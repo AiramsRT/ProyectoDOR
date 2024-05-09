@@ -1,9 +1,11 @@
 
 <B>Consideraciones a tener en cuenta sobre el proyecto:</B>
 
--	Imágenes y videos con alternativos (en formato webp y avif para imágenes y webm y avi para video, con la finalidad de disminuir el tamaño y disminuir la carga de la web)
+-	Imágenes, videos e iconos que se muestran en la web tienen opciones alternativas (en formato webp y avif para imágenes y webm y avi para video, .svg y .ai para los iconos con la finalidad de disminuir el tamaño y disminuir la carga de la web)
+-	El vídeo incrustado tiene subtitulo y está alojado en la propia web
 -	Los enlaces se abren en pestaña nueva para no perder al cliente de la web.
 -	Logo redirecciona al index en cualquier caso.
+-	Los títulos de cada página se quedan en sticky al hacer scroll hacia la zona inferior
 -	Definiciones de colores, fuentes de tipografías, tamaños de tipografías, etc añadidas como root en el css para usar mismo estilo general para todo
 -	La fuente de Montserrat que hemos usado está alojada en nuestro servidor para no cargar fuentes de servidores externos.
 -	Usamos font-display que utiliza una fuente de respaldo hasta que se cargue completamente la fuente web
